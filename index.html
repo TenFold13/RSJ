@@ -286,6 +286,54 @@
             </div>
         </div>
 
+        <form id="contact-form" action="mailto:launch@readysetjourney.example.com" method="POST" enctype="text/plain"
+              class="max-w-2xl mx-auto text-left space-y-4 bg-brand-white/10 p-6 rounded-lg mb-10">
+          <div>
+            <label for="name" class="block mb-1 font-semibold text-gray-200">Name</label>
+            <input type="text" id="name" name="name" required
+                   class="w-full p-2 rounded bg-brand-white text-brand-dark-neutral" />
+          </div>
+          <div>
+            <label for="email" class="block mb-1 font-semibold text-gray-200">Email</label>
+            <input type="email" id="email" name="email" required
+                   class="w-full p-2 rounded bg-brand-white text-brand-dark-neutral" />
+          </div>
+          <div>
+            <label for="interests" class="block mb-1 font-semibold text-gray-200">Key Interests/Passions</label>
+            <textarea id="interests" name="interests" rows="2" required
+                      class="w-full p-2 rounded bg-brand-white text-brand-dark-neutral"
+                      placeholder="e.g., AI ethics, street art"></textarea>
+          </div>
+          <div>
+            <label for="seeking" class="block mb-1 font-semibold text-gray-200">What You're Seeking</label>
+            <textarea id="seeking" name="seeking" rows="2" required
+                      class="w-full p-2 rounded bg-brand-white text-brand-dark-neutral"
+                      placeholder="e.g., new skills, clarity, adventure"></textarea>
+          </div>
+          <div>
+            <label for="budget" class="block mb-1 font-semibold text-gray-200">Budget Ideas</label>
+            <textarea id="budget" name="budget" rows="2" required
+                      class="w-full p-2 rounded bg-brand-white text-brand-dark-neutral"
+                      placeholder="e.g., Mid-range, Luxury, Specific Cap"></textarea>
+          </div>
+          <div>
+            <label for="timeframe" class="block mb-1 font-semibold text-gray-200">Desired Travel Time Frame/Duration</label>
+            <textarea id="timeframe" name="timeframe" rows="2" required
+                      class="w-full p-2 rounded bg-brand-white text-brand-dark-neutral"
+                      placeholder="e.g., A week in September"></textarea>
+          </div>
+          <div>
+            <label for="preferences" class="block mb-1 font-semibold text-gray-200">Other Preferences (optional)</label>
+            <textarea id="preferences" name="preferences" rows="2"
+                      class="w-full p-2 rounded bg-brand-white text-brand-dark-neutral"></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="bg-brand-orange hover:bg-brand-orange-accent text-black font-bold py-3 px-8 rounded-md transition-colors duration-300">
+              Get Started
+            </button>
+          </div>
+        </form>
+
         <a href="mailto:launch@readysetjourney.example.com?subject=RSJ Immersive Journey Inquiry&body=Hi Ready Set Journey Team,%0D%0A%0D%0AI'm interested in a personalized immersive journey blueprint!%0D%0A%0D%0AMy key interests/passions are: [Your Interests Here]%0D%0AWhat I'm seeking (e.g., new skills, clarity, adventure): [Your Goals Here]%0D%0AMy budget ideas: [e.g., Mid-range, Luxury, Specific Cap]%0D%0AMy desired travel time frame/duration: [e.g., Dates, Length of Trip]%0D%0AOptional: Other preferences: [Your Constraints Here]%0D%0A%0D%0AThanks!"
            class="bg-brand-orange hover:bg-brand-orange-accent text-black font-bold py-4 px-8 rounded-lg text-lg md:text-xl inline-flex items-center transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-0.5 shadow-xl hover:shadow-2xl font-heading">
           <i data-lucide="mail-plus" class="mr-3 w-6 h-6"></i>
