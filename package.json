@@ -4,11 +4,24 @@
   "description": "Ready Set Journey Website",
   "main": "index.html",
   "scripts": {
-    "build": "cp -r * dist/",
+    "build": "echo 'Building static site'",
     "start": "serve -s"
   },
   "dependencies": {},
   "devDependencies": {
     "serve": "^14.0.0"
-  }
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "builds": [
+    {
+      "src": "**/*.@(html|css|js|json|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    { "src": "/pages/(.*)", "dest": "/pages/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
 }
