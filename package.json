@@ -1,0 +1,14 @@
+{
+  "name": "rsj-website",
+  "version": "1.0.0",
+  "description": "Ready Set Journey Website",
+  "main": "index.html",
+  "scripts": {
+    "build": "cp -r * dist/",
+    "start": "serve -s"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "serve": "^14.0.0"
+  }
+}

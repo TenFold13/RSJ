@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -41,22 +42,20 @@
 
   <header class="py-4 md:py-5 sticky top-0 bg-brand-white/95 backdrop-blur-md z-50 shadow-md">
     <div class="container mx-auto px-6 flex justify-between items-center">
-      <a href="#" class="text-2xl md:text-3xl font-extrabold text-brand-orange tracking-tight font-heading hover:text-brand-teal transition-colors duration-300">Ready Set Journey 🚀</a>
+      <a href="index.html" class="text-2xl md:text-3xl font-extrabold text-brand-orange tracking-tight font-heading hover:text-brand-teal transition-colors duration-300">Ready Set Journey 🚀</a>
       <nav>
         <ul class="flex flex-wrap justify-end space-x-2 sm:space-x-3 md:space-x-4">
-          <li><a href="#hero" class="text-xs sm:text-sm text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Home</a></li>
-          <li><a href="#who-its-for" class="text-xs sm:text-sm text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Who For</a></li>
-          <li><a href="#why-rsj" class="text-xs sm:text-sm text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Why RSJ</a></li>
-          <li><a href="#immersive-journeys" class="text-xs sm:text-sm text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Journeys</a></li>
-          <li><a href="#sample-itinerary" class="text-xs sm:text-sm text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Itinerary</a></li>
-          <li><a href="#pricing" class="text-xs sm:text-sm text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Pricing</a></li>
-          <li><a href="#cta" class="text-xs sm:text-sm text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Contact</a></li>
+          <li><a href="index.html" class="text-xs sm:text-sm text-brand-orange font-semibold transition-colors duration-300 py-2">Home</a></li>
+          <li><a href="pages/journeys.html" class="text-xs sm:text-sm text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Journeys</a></li>
+          <li><a href="pages/about.html" class="text-xs sm:text-sm text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">About</a></li>
+          <li><a href="pages/contact.html" class="text-xs sm:text-sm bg-brand-orange text-white px-4 py-2 rounded-full hover:bg-brand-orange-accent transition-colors duration-300 font-medium">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
+    <!-- Hero Section -->
     <section id="hero" class="relative text-brand-white py-20 md:py-32 min-h-[60vh] md:min-h-[70vh] flex items-center">
       <div class="absolute inset-0">
         <img src="https://r2.flowith.net/files/o/1748969255266-transformative_future_ready_travel_landscape_index_2@1024x1024.png" alt="Panoramic view of a breathtaking, futuristic landscape blending nature and innovation, symbolizing a transformative future-ready journey" class="w-full h-full object-cover brightness-90">
@@ -67,97 +66,145 @@
         <p class="text-xl md:text-2xl max-w-2xl mx-auto text-brand-white mb-8 font-sans font-semibold drop-shadow-md">
           No boring tours. No cookie-cutter packages. <span class="text-brand-orange">Just epic, research-powered itineraries</span> for curious souls who want to squeeze the juice out of every destination.
         </p>
-        <a href="#cta" class="inline-block mt-4 px-8 py-4 bg-brand-orange text-black font-bold rounded-full text-lg md:text-xl shadow-xl hover:bg-brand-orange-accent hover:scale-105 transition-all duration-300">
+        <a href="pages/contact.html" class="inline-block mt-4 px-8 py-4 bg-brand-orange text-black font-bold rounded-full text-lg md:text-xl shadow-xl hover:bg-brand-orange-accent hover:scale-105 transition-all duration-300">
           Get My Custom Adventure
         </a>
       </div>
     </section>
 
-      </div>
-    </section>
-
-    <section id="who-its-for" class="py-16 md:py-24 bg-brand-white">
+    <!-- Featured Journeys Preview -->
+    <section class="py-16 md:py-24 bg-white">
       <div class="container mx-auto px-6">
-        <h3 class="text-4xl md:text-5xl font-extrabold text-center text-brand-orange mb-6 font-heading">Who’s This For? 🌎✨</h3>
-        <p class="text-center text-brand-dark-neutral max-w-2xl mx-auto mb-10 md:mb-14 text-xl font-sans font-semibold">You want more than a checklist. You want stories. You want goosebumps. You want to come home changed.<br><span class="text-brand-teal">We got you.</span></p>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-gradient-to-br from-brand-orange/10 to-brand-teal/10 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
-            <div class="flex items-center mb-4">
-              <i data-lucide="graduation-cap" class="text-brand-orange w-10 h-10 mr-4 flex-shrink-0"></i>
-              <h4 class="text-xl font-bold text-brand-dark-neutral font-heading">Just Graduated?</h4>
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-brand-teal mb-12 font-heading">Featured Journeys</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Journey 1 -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+            <img src="https://r2.flowith.net/files/o/1748969252951-elegant_networking_event_for_highend_travel_services_index_1@1024x1024.png" 
+                 alt="Space Exploration Journey" 
+                 class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-brand-teal mb-2 font-heading">Space & Innovation</h3>
+              <p class="text-brand-dark-neutral mb-4">For the curious minds fascinated by the final frontier and technological breakthroughs.</p>
+              <a href="pages/journeys.html#space" class="text-brand-orange font-semibold hover:underline inline-flex items-center">
+                Learn More <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+              </a>
             </div>
-            <p class="text-brand-dark-neutral leading-relaxed font-sans">Skip the boring gap year. Let’s plot a journey that’ll blow your mind (and your resume).</p>
           </div>
-          <div class="bg-gradient-to-br from-brand-orange/10 to-brand-teal/10 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
-            <div class="flex items-center mb-4">
-              <i data-lucide="briefcase-business" class="text-brand-orange w-10 h-10 mr-4 flex-shrink-0"></i>
-              <h4 class="text-xl font-bold text-brand-dark-neutral font-heading">Burned Out?</h4>
+          
+          <!-- Journey 2 -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+            <img src="https://r2.flowith.net/files/o/1748969252667-collaborative_professional_workshop_in_luxury_travel_setting_index_0@1024x1024.png" 
+                 alt="Creative Retreat Journey" 
+                 class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-brand-teal mb-2 font-heading">Creative Retreat</h3>
+              <p class="text-brand-dark-neutral mb-4">For artists, writers, and creators seeking inspiration in breathtaking landscapes.</p>
+              <a href="pages/journeys.html#creative" class="text-brand-orange font-semibold hover:underline inline-flex items-center">
+                Learn More <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+              </a>
             </div>
-            <p class="text-brand-dark-neutral leading-relaxed font-sans">Sick of Zoom and doom? Recharge with a trip that sparks real joy and new ideas.</p>
           </div>
-          <div class="bg-gradient-to-br from-brand-orange/10 to-brand-teal/10 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
-            <div class="flex items-center mb-4">
-              <i data-lucide="gem" class="text-brand-orange w-10 h-10 mr-4 flex-shrink-0"></i>
-              <h4 class="text-xl font-bold text-brand-dark-neutral font-heading">Midlife Remix?</h4>
+          
+          <!-- Journey 3 -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+            <img src="https://r2.flowith.net/files/o/1748969255266-transformative_future_ready_travel_landscape_index_2@1024x1024.png" 
+                 alt="Wellness Escape Journey" 
+                 class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-brand-teal mb-2 font-heading">Wellness Escape</h3>
+              <p class="text-brand-dark-neutral mb-4">Recharge your mind, body, and soul in serene, natural settings.</p>
+              <a href="pages/journeys.html#wellness" class="text-brand-orange font-semibold hover:underline inline-flex items-center">
+                Learn More <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+              </a>
             </div>
-            <p class="text-brand-dark-neutral leading-relaxed font-sans">You’re not lost—you’re leveling up. Let’s map out your next chapter, your way.</p>
           </div>
-          <div class="bg-gradient-to-br from-brand-orange/10 to-brand-teal/10 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 md:col-start-1 lg:col-start-auto">
-            <div class="flex items-center mb-4">
-              <i data-lucide="sunset" class="text-brand-orange w-10 h-10 mr-4 flex-shrink-0"></i>
-              <h4 class="text-xl font-bold text-brand-dark-neutral font-heading">Retired & Restless?</h4>
-            </div>
-            <p class="text-brand-dark-neutral leading-relaxed font-sans">You’ve earned adventure. Let’s make it legendary, not ordinary.</p>
-          </div>
-          <div class="bg-gradient-to-br from-brand-orange/10 to-brand-teal/10 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 md:col-span-2 lg:col-span-1">
-            <div class="flex items-center mb-4">
-              <i data-lucide="sparkles" class="text-brand-orange w-10 h-10 mr-4 flex-shrink-0"></i>
-              <h4 class="text-xl font-bold text-brand-dark-neutral font-heading">Just Want More?</h4>
-            </div>
-            <p class="text-brand-dark-neutral leading-relaxed font-sans">You crave depth, not surface. You want to feel alive. Welcome to your kind of travel.</p>
-          </div>
+        </div>
+        <div class="text-center mt-12">
+          <a href="pages/journeys.html" class="inline-block bg-brand-teal text-white py-3 px-8 rounded-full font-semibold hover:bg-brand-teal/90 transition-colors">
+            View All Journeys
+          </a>
         </div>
       </div>
     </section>
 
-
-    <section id="why-rsj" class="py-16 md:py-24 bg-gradient-to-br from-brand-teal/10 to-brand-orange/10">
+    <!-- Why Choose Us -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-brand-teal/10 to-brand-orange/10">
       <div class="container mx-auto px-6">
-        <h3 class="text-4xl md:text-5xl font-extrabold text-center text-brand-teal mb-10 font-heading">Why RSJ? <span class="text-brand-orange">Because Boring Isn’t an Option.</span> 😎</h3>
-        <div class="md:flex md:items-center md:space-x-12">
-          <div class="md:w-2/5 lg:w-1/3 mb-10 md:mb-0 flex items-center justify-center">
-            <img src="https://r2.flowith.net/files/o/1748969252667-collaborative_professional_workshop_in_luxury_travel_setting_index_0@1024x1024.png" alt="People vibing and brainstorming travel dreams" class="rounded-2xl shadow-2xl w-full object-cover h-auto max-h-[400px] border-4 border-brand-orange/30">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-brand-teal mb-4 font-heading">Why Choose Ready Set Journey?</h2>
+          <p class="text-xl text-brand-dark-neutral max-w-3xl mx-auto">We're not just another travel company. Here's what makes us different.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
+            <div class="w-14 h-14 bg-brand-orange/10 rounded-full flex items-center justify-center mb-4">
+              <i data-lucide="search" class="text-brand-orange w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-brand-teal mb-2 font-heading">Deep Research</h3>
+            <p class="text-brand-dark-neutral">We uncover hidden gems and unique experiences you won't find in guidebooks.</p>
           </div>
-          <div class="md:w-3/5 lg:w-2/3 grid gap-7">
-            <div class="flex items-start gap-4 bg-white/80 rounded-xl p-6 shadow-lg hover:shadow-2xl hover:scale-105 transition-all">
-              <i data-lucide="search" class="text-brand-orange w-10 h-10"></i>
-              <div>
-                <h4 class="text-xl font-bold text-brand-dark-neutral font-heading mb-1">We Dig Deeper 🕵️‍♂️</h4>
-                <p class="text-brand-dark-neutral font-sans">No generic Google lists. We uncover the wild, the weird, and the wonderful—so you get the real story, not the tourist trap.</p>
-              </div>
+          
+          <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
+            <div class="w-14 h-14 bg-brand-orange/10 rounded-full flex items-center justify-center mb-4">
+              <i data-lucide="user" class="text-brand-orange w-7 h-7"></i>
             </div>
-            <div class="flex items-start gap-4 bg-white/80 rounded-xl p-6 shadow-lg hover:shadow-2xl hover:scale-105 transition-all">
-              <i data-lucide="map" class="text-brand-teal w-10 h-10"></i>
-              <div>
-                <h4 class="text-xl font-bold text-brand-dark-neutral font-heading mb-1">It’s All About You 🎯</h4>
-                <p class="text-brand-dark-neutral font-sans">Your passions, your pace, your style. We build your dream adventure—no two RSJ journeys are ever the same.</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-4 bg-white/80 rounded-xl p-6 shadow-lg hover:shadow-2xl hover:scale-105 transition-all">
-              <i data-lucide="zap" class="text-brand-orange w-10 h-10"></i>
-              <div>
-                <h4 class="text-xl font-bold text-brand-dark-neutral font-heading mb-1">Zero Booking, Zero Hassle ✌️</h4>
-                <p class="text-brand-dark-neutral font-sans">We’re not a travel agency. We hand you the golden blueprint—<span class="font-bold">you book, you own it, you live it</span>. Total freedom, total control.</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-4 bg-brand-orange/10 rounded-xl p-6 shadow-lg border-l-4 border-brand-orange">
-              <i data-lucide="party-popper" class="text-brand-orange w-10 h-10"></i>
-              <div>
-                <h4 class="text-xl font-bold text-brand-dark-neutral font-heading mb-1">Fun Is Mandatory 🎉</h4>
-                <p class="text-brand-dark-neutral font-sans">Travel should make you grin, gasp, and high-five a stranger. That’s what we design for you, every single time.</p>
-              </div>
-            </div>
+            <h3 class="text-xl font-bold text-brand-teal mb-2 font-heading">Personalized for You</h3>
+            <p class="text-brand-dark-neutral">Your journey is crafted around your interests, pace, and travel style.</p>
           </div>
+          
+          <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
+            <div class="w-14 h-14 bg-brand-orange/10 rounded-full flex items-center justify-center mb-4">
+              <i data-lucide="zap" class="text-brand-orange w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-brand-teal mb-2 font-heading">Hassle-Free</h3>
+            <p class="text-brand-dark-neutral">We handle the planning, you enjoy the adventure. It's that simple.</p>
+          </div>
+          
+          <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
+            <div class="w-14 h-14 bg-brand-orange/10 rounded-full flex items-center justify-center mb-4">
+              <i data-lucide="heart" class="text-brand-orange w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-brand-teal mb-2 font-heading">Authentic Experiences</h3>
+            <p class="text-brand-dark-neutral">Connect with local cultures and create memories that last a lifetime.</p>
+          </div>
+        </div>
+        
+        <div class="text-center mt-16">
+          <a href="pages/about.html" class="inline-block bg-brand-orange text-black py-3 px-8 rounded-full font-semibold hover:bg-brand-orange-accent transition-colors">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-brand-orange/10 rounded-full flex items-center justify-center mr-4">
+                <i data-lucide="graduation-cap" class="text-brand-orange w-6 h-6"></i>
+              </div>
+              <h4 class="text-xl font-bold text-brand-dark-neutral font-heading">Just Graduated?</h4>
+            </div>
+            <p class="text-brand-dark-neutral leading-relaxed">Skip the boring gap year. Let's plot a journey that'll blow your mind (and your resume).</p>
+          </div>
+          
+          <div class="bg-gradient-to-br from-brand-orange/5 to-brand-teal/5 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-300">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-brand-orange/10 rounded-full flex items-center justify-center mr-4">
+                <i data-lucide="briefcase" class="text-brand-orange w-6 h-6"></i>
+              </div>
+              <h4 class="text-xl font-bold text-brand-dark-neutral font-heading">Burned Out?</h4>
+            </div>
+            <p class="text-brand-dark-neutral leading-relaxed">Sick of Zoom and doom? Recharge with a trip that sparks real joy and new ideas.</p>
+          </div>
+          
+          <div class="bg-gradient-to-br from-brand-orange/5 to-brand-teal/5 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-300">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-brand-orange/10 rounded-full flex items-center justify-center mr-4">
+                <i data-lucide="gem" class="text-brand-orange w-6 h-6"></i>
+              </div>
+              <h4 class="text-xl font-bold text-brand-dark-neutral font-heading">Midlife Remix?</h4>
+            </div>
+            <p class="text-brand-dark-neutral leading-relaxed">You're not lost—you're leveling up. Let's map out your next chapter, your way.</p>
+          </div>
+        </div>
+        
+        <div class="text-center mt-12">
+          <a href="pages/about.html" class="inline-flex items-center text-brand-orange font-semibold hover:underline">
+            Learn more about how we can help you <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+          </a>
         </div>
       </div>
     </section>
@@ -298,13 +345,71 @@
     </section>
   </main>
 
-  <footer class="py-10 bg-brand-dark-neutral text-brand-light-gray/70 text-center">
-    <div class="container mx-auto px-6 font-sans">
-      <p>&copy; <span id="currentYear"></span> Ready Set Journey. Your adventure starts here.</p>
+  <!-- CTA Section -->
+  <section class="py-16 md:py-24 bg-brand-teal text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 font-heading">Ready to Start Your Journey?</h2>
+      <p class="text-xl max-w-2xl mx-auto mb-8">Let's create an adventure that's as unique as you are.</p>
+      <a href="pages/contact.html" class="inline-block bg-brand-orange text-black font-bold py-4 px-8 rounded-full text-lg hover:bg-brand-orange-accent transition-colors">
+        Get in Touch
+      </a>
+    </div>
+  </section>
+
+  <footer class="py-10 bg-brand-dark-neutral text-brand-light-gray/70">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="md:col-span-2">
+          <h3 class="text-xl font-bold text-white mb-4 font-heading">Ready Set Journey</h3>
+          <p class="mb-4">Crafting personalized travel experiences that transform and inspire.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-brand-light-gray/70 hover:text-white transition-colors">
+              <i data-lucide="instagram" class="w-5 h-5"></i>
+            </a>
+            <a href="#" class="text-brand-light-gray/70 hover:text-white transition-colors">
+              <i data-lucide="twitter" class="w-5 h-5"></i>
+            </a>
+            <a href="#" class="text-brand-light-gray/70 hover:text-white transition-colors">
+              <i data-lucide="youtube" class="w-5 h-5"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4 font-heading">Explore</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-brand-light-gray/70 hover:text-white transition-colors">Home</a></li>
+            <li><a href="pages/journeys.html" class="text-brand-light-gray/70 hover:text-white transition-colors">Journeys</a></li>
+            <li><a href="pages/about.html" class="text-brand-light-gray/70 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="pages/contact.html" class="text-brand-light-gray/70 hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4 font-heading">Contact</h4>
+          <ul class="space-y-2">
+            <li class="flex items-start">
+              <i data-lucide="mail" class="w-5 h-5 mr-2 mt-1 flex-shrink-0"></i>
+              <a href="mailto:hello@readysetjourney.com" class="text-brand-light-gray/70 hover:text-white transition-colors">hello@readysetjourney.com</a>
+            </li>
+            <li class="flex items-start mt-3">
+              <i data-lucide="phone" class="w-5 h-5 mr-2 mt-1 flex-shrink-0"></i>
+              <a href="tel:+18005551234" class="text-brand-light-gray/70 hover:text-white transition-colors">+1 (800) 555-1234</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-brand-light-gray/20 mt-10 pt-6 text-sm text-center">
+        <p>&copy; <span id="currentYear"></span> Ready Set Journey. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    // Set current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="script.js"></script>
 </body>

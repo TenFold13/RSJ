@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Ready Set Journey</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              heading: ['Poppins', 'sans-serif'],
+              sans: ['Open Sans', 'sans-serif'],
+            },
+            colors: {
+              'brand-orange': '#FF8C42',
+              'brand-green': '#4CAF50',
+              'brand-teal': '#00796B',
+              'brand-light-gray': '#F5F5F5',
+              'brand-dark-neutral': '#333333',
+              'brand-orange-accent': '#FF5722',
+              'brand-white': '#FFFFFF'
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-orange-100 via-teal-50 to-green-100 text-brand-dark-neutral antialiased font-sans overflow-x-hidden">
+  <!-- Header -->
+  <div id="header-placeholder"></div>
+
+  <!-- Main Content -->
+  <main class="min-h-screen">
+    <section class="py-20 md:py-32 bg-white">
+      <div class="container mx-auto px-6">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-center text-brand-teal mb-8 font-heading">Our Story</h1>
+        <div class="max-w-4xl mx-auto">
+          <p class="text-lg md:text-xl text-brand-dark-neutral mb-6 leading-relaxed">
+            Ready Set Journey was born from a simple idea: travel should be transformative, not transactional. 
+            We're not just another travel company—we're experience architects, memory makers, and adventure 
+            curators rolled into one.
+          </p>
+          <p class="text-lg md:text-xl text-brand-dark-neutral mb-6 leading-relaxed">
+            Founded by a team of passionate travelers, we've made it our mission to create journeys that 
+            go beyond the ordinary. We believe that the right trip at the right time can change everything.
+          </p>
+          <div class="mt-12 grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
+              <h3 class="text-2xl font-bold text-brand-orange mb-4 font-heading">Our Mission</h3>
+              <p class="text-brand-dark-neutral">To empower people to explore the world on their terms, with confidence and excitement, through personalized, research-backed travel experiences.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
+              <h3 class="text-2xl font-bold text-brand-teal mb-4 font-heading">Our Promise</h3>
+              <p class="text-brand-dark-neutral">No cookie-cutter packages. No tourist traps. Just authentic, unforgettable experiences tailored to who you are and what you love.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <script src="../script.js"></script>
+</body>
+</html>
