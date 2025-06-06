@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - Ready Set Journey</title>
+    <meta name="description" content="Discover how Ready Set Journey crafts your perfect hobby-driven travel itinerary in three simple steps.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-orange': '#FF6B35',
+                        'brand-teal': '#1B9AAA',
+                        'brand-green': '#06D6A0',
+                        'brand-light-gray': '#F8F9FA',
+                        'brand-dark-neutral': '#2B2D42',
+                        'brand-orange-accent': '#FF9E1F',
+                        'brand-white': '#FFFFFF',
+                    },
+                    fontFamily: {
+                        'sans': ['Poppins', 'sans-serif'],
+                        'body': ['Open Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        .step-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background-color: #1B9AAA;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+    </style>
+</head>
+<body class="font-body bg-brand-light-gray">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-xl font-bold text-brand-dark">Ready Set Journey</a>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:space-x-8">
+                    <a href="index.html" class="border-transparent text-gray-500 hover:border-brand-orange hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</a>
+                    <a href="how-it-works.html" class="border-brand-orange text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">How It Works</a>
+                    <a href="pricing.html" class="border-transparent text-gray-500 hover:border-brand-orange hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Pricing</a>
+                    <a href="about.html" class="border-transparent text-gray-500 hover:border-brand-orange hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">About</a>
+                    <a href="contact.html" class="border-transparent text-gray-500 hover:border-brand-orange hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Contact</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <!-- Mobile menu button -->
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-orange" id="mobile-menu-button">
+                        <span class="sr-only">Open main menu</span>
+                        <i data-lucide="menu" class="block h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="hidden md:hidden" id="mobile-menu">
+        <div class="pt-2 pb-3 space-y-1">
+            <a href="index.html" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Home</a>
+            <a href="how-it-works.html" class="block pl-3 pr-4 py-2 border-l-4 border-brand-orange text-base font-medium text-brand-orange bg-brand-orange-50">How It Works</a>
+            <a href="pricing.html" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Pricing</a>
+            <a href="about.html" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">About</a>
+            <a href="contact.html" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="bg-brand-dark-neutral text-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">How It Works</h1>
+            <p class="mt-6 max-w-3xl mx-auto text-xl text-gray-300">Your personalized travel experience in three simple steps</p>
+        </div>
+    </div>
+
+    <!-- Steps Section -->
+    <div class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-brand-teal font-semibold tracking-wide uppercase">Process</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Crafting Your Perfect Trip
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    We combine your passions with local expertise to create an unforgettable journey
+                </p>
+            </div>
+
+            <div class="mt-16">
+                <div class="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
+                    <!-- Step 1 -->
+                    <div class="step-card bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                        <div class="step-number">1</div>
+                        <h3 class="text-xl font-bold text-center text-gray-900 mb-4">Share Your Travel DNA</h3>
+                        <p class="text-gray-600 text-center">
+                            Complete our quick intake form about your travel style, hobbies, and must-see spots. The more personality you share, the better we can tailor your adventure.
+                        </p>
+                        <div class="mt-6 flex justify-center">
+                            <i data-lucide="edit" class="h-8 w-8 text-brand-teal"></i>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="step-card bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                        <div class="step-number">2</div>
+                        <h3 class="text-xl font-bold text-center text-gray-900 mb-4">We Work Our Magic</h3>
+                        <p class="text-gray-600 text-center">
+                            Our travel designers get to work, combining your interests with local insights to craft a personalized itinerary. Expect a first draft within 3-5 business days.
+                        </p>
+                        <div class="mt-6 flex justify-center">
+                            <i data-lucide="wand-2" class="h-8 w-8 text-brand-teal"></i>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="step-card bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                        <div class="step-number">3</div>
+                        <h3 class="text-xl font-bold text-center text-gray-900 mb-4">Review & Refine</h3>
+                        <p class="text-gray-600 text-center">
+                            We'll send you a detailed itinerary for review. Need adjustments? We offer two rounds of revisions to ensure it's perfect before you book anything.
+                        </p>
+                        <div class="mt-6 flex justify-center">
+                            <i data-lucide="check-circle" class="h-8 w-8 text-brand-teal"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- What's Included Section -->
+    <div class="py-16 bg-brand-light-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-12">
+                <h2 class="text-base text-brand-teal font-semibold tracking-wide uppercase">Your Itinerary Includes</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Everything You Need, Nothing You Don't
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Included Item 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div class="w-12 h-12 bg-brand-teal bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+                        <i data-lucide="map" class="h-6 w-6 text-brand-teal"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Interactive Map</h3>
+                    <p class="text-gray-600">A custom Google Map with all locations pinned and color-coded by interest.</p>
+                </div>
+
+                <!-- Included Item 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div class="w-12 h-12 bg-brand-teal bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+                        <i data-lucide="calendar" class="h-6 w-6 text-brand-teal"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Day-by-Day Schedule</h3>
+                    <p class="text-gray-600">A detailed breakdown of each day with timing, locations, and activity details.</p>
+                </div>
+
+                <!-- Included Item 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div class="w-12 h-12 bg-brand-teal bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+                        <i data-lucide="utensils" class="h-6 w-6 text-brand-teal"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Dining Recommendations</h3>
+                    <p class="text-gray-600">Curated restaurant and café suggestions that match your taste and dietary preferences.</p>
+                </div>
+
+                <!-- Included Item 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div class="w-12 h-12 bg-brand-teal bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+                        <i data-lucide="train" class="h-6 w-6 text-brand-teal"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Transportation Tips</h3>
+                    <p class="text-gray-600">Best ways to get around, including public transit options, walking routes, and taxi/rideshare tips.</p>
+                </div>
+
+                <!-- Included Item 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div class="w-12 h-12 bg-brand-teal bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+                        <i data-lucide="alert-circle" class="h-6 w-6 text-brand-teal"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Local Insights</h3>
+                    <p class="text-gray-600">Insider tips, hidden gems, and local customs to enhance your experience.</p>
+                </div>
+
+                <!-- Included Item 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div class="w-12 h-12 bg-brand-teal bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+                        <i data-lucide="message-circle" class="h-6 w-6 text-brand-teal"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Support</h3>
+                    <p class="text-gray-600">Email support for any questions about your itinerary before or during your trip.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-12">
+                <h2 class="text-base text-brand-teal font-semibold tracking-wide uppercase">Common Questions</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Need More Info?
+                </p>
+            </div>
+
+            <div class="max-w-3xl mx-auto divide-y-2 divide-gray-200">
+                <div class="py-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">How long does it take to receive my itinerary?</h3>
+                    <p class="text-gray-600">We typically deliver your first draft within 3-5 business days after receiving all necessary information. Rush options are available for an additional fee.</p>
+                </div>
+                <div class="py-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Do you book flights or accommodations?</h3>
+                    <p class="text-gray-600">No, we focus on crafting the perfect itinerary based on your preferences. You'll handle the actual bookings, giving you full control over your travel plans and budget.</p>
+                </div>
+                <div class="py-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">What if I need to make changes after receiving my itinerary?</h3>
+                    <p class="text-gray-600">We include two rounds of revisions with every itinerary. Additional revisions are available for a small fee.</p>
+                </div>
+                <div class="py-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Can you accommodate dietary restrictions or accessibility needs?</h3>
+                    <p class="text-gray-600">Absolutely! Just let us know about any dietary restrictions, mobility concerns, or other special requirements in your intake form, and we'll tailor our recommendations accordingly.</p>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <p class="text-lg text-gray-600">Still have questions?</p>
+                <a href="contact.html" class="mt-4 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-brand-orange hover:bg-brand-orange-accent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-orange">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-brand-teal">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+            <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                <span class="block">Ready to start your journey?</span>
+                <span class="block text-brand-orange-accent">Let's create your perfect trip today.</span>
+            </h2>
+            <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+                <div class="inline-flex rounded-md shadow">
+                    <a href="contact.html" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-brand-teal bg-white hover:bg-gray-50">
+                        Get Started
+                    </a>
+                </div>
+                <div class="ml-3 inline-flex rounded-md shadow">
+                    <a href="pricing.html" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-teal bg-opacity-60 hover:bg-opacity-70">
+                        View Pricing
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark-neutral text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8 xl:col-span-1">
+                    <h3 class="text-2xl font-bold">Ready Set Journey</h3>
+                    <p class="text-gray-300 text-sm">
+                        Crafting personalized travel experiences that match your passions and pace.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">Facebook</span>
+                            <i data-lucide="facebook" class="h-6 w-6"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">Instagram</span>
+                            <i data-lucide="instagram" class="h-6 w-6"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">Twitter</span>
+                            <i data-lucide="twitter" class="h-6 w-6"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Navigation</h3>
+                            <ul class="mt-4 space-y-4">
+                                <li><a href="index.html" class="text-base text-gray-400 hover:text-white">Home</a></li>
+                                <li><a href="how-it-works.html" class="text-base text-gray-400 hover:text-white">How It Works</a></li>
+                                <li><a href="pricing.html" class="text-base text-gray-400 hover:text-white">Pricing</a></li>
+                                <li><a href="about.html" class="text-base text-gray-400 hover:text-white">About</a></li>
+                                <li><a href="contact.html" class="text-base text-gray-400 hover:text-white">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Legal</h3>
+                            <ul class="mt-4 space-y-4">
+                                <li><a href="privacy.html" class="text-base text-gray-400 hover:text-white">Privacy Policy</a></li>
+                                <li><a href="terms.html" class="text-base text-gray-400 hover:text-white">Terms of Service</a></li>
+                                <li><a href="refund.html" class="text-base text-gray-400 hover:text-white">Refund Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Contact</h3>
+                            <ul class="mt-4 space-y-4">
+                                <li class="flex">
+                                    <i data-lucide="mail" class="h-5 w-5 text-gray-400 mr-3"></i>
+                                    <span class="text-base text-gray-400">hello@readysetjourney.com</span>
+                                </li>
+                                <li class="flex">
+                                    <i data-lucide="phone" class="h-5 w-5 text-gray-400 mr-3"></i>
+                                    <span class="text-base text-gray-400">+1 (555) 123-4567</span>
+                                </li>
+                                <li class="flex">
+                                    <i data-lucide="map-pin" class="h-5 w-5 text-gray-400 mr-3"></i>
+                                    <span class="text-base text-gray-400">123 Travel St, Suite 100<br>San Francisco, CA 94107</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8">
+                <p class="text-base text-gray-400 text-center">
+                    &copy; 2023 Ready Set Journey. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            const isHidden = menu.classList.contains('hidden');
+            
+            if (isHidden) {
+                menu.classList.remove('hidden');
+                lucide.createIcons(); // Re-initialize icons after showing menu
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
