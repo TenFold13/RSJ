@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Ready Set Journey</title>
+    <meta name="description" content="Learn about Ready Set Journey and our mission to create personalized, passion-driven travel experiences that go beyond the ordinary.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-orange': '#FF6B35',
+                        'brand-teal': '#1B9AAA',
+                        'brand-green': '#06D6A0',
+                        'brand-light-gray': '#F8F9FA',
+                        'brand-dark-neutral': '#2B2D42',
+                        'brand-orange-accent': '#FF9E1F',
+                        'brand-white': '#FFFFFF',
+                    },
+                    fontFamily: {
+                        'sans': ['Poppins', 'sans-serif'],
+                        'body': ['Open Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-brand-light-gray font-body">
+    <!-- Navigation -->
+    <header class="py-4 md:py-5 sticky top-0 bg-brand-white/95 backdrop-blur-md z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-brand-orange">Ready Set Journey</a>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:space-x-8">
+                    <a href="index.html" class="border-transparent text-gray-500 hover:border-brand-orange hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</a>
+                    <a href="how-it-works.html" class="border-transparent text-gray-500 hover:border-brand-orange hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">How It Works</a>
+                    <a href="pricing.html" class="border-transparent text-gray-500 hover:border-brand-orange hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Pricing</a>
+                    <a href="blog.html" class="border-transparent text-gray-500 hover:border-brand-orange hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Blog</a>
+                    <a href="about.html" class="border-brand-orange text-brand-orange inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">About</a>
+                    <a href="contact.html" class="ml-8 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-brand-orange hover:bg-brand-orange-accent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-orange">Contact</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-orange" id="mobile-menu-button">
+                        <span class="sr-only">Open main menu</span>
+                        <i data-lucide="menu" class="block h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Home</a>
+                <a href="how-it-works.html" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">How It Works</a>
+                <a href="pricing.html" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Pricing</a>
+                <a href="blog.html" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Blog</a>
+                <a href="about.html" class="block pl-3 pr-4 py-2 border-l-4 border-brand-orange text-base font-medium text-brand-orange bg-brand-orange-50">About</a>
+                <a href="contact.html" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="bg-brand-dark-neutral text-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">Our Story</h1>
+            <p class="mt-6 max-w-3xl mx-auto text-xl text-gray-300">Crafting personalized travel experiences that go beyond the ordinary</p>
+        </div>
+    </div>
+
+    <!-- Our Story -->
+    <div class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex lg:items-center lg:justify-between">
+                <div class="lg:w-1/2 lg:pr-12">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        <span class="block">Why We Started</span>
+                        <span class="block text-brand-teal">Ready Set Journey</span>
+                    </h2>
+                    <div class="mt-6 text-gray-600 space-y-6">
+                        <p>In a world of cookie-cutter travel packages and one-size-fits-all itineraries, we noticed something was missing: <strong>authenticity</strong> and <strong>personalization</strong>.</p>
+                        <p>After years of planning trips for friends and family, we realized that the most memorable journeys aren't about checking off tourist attractions—they're about connecting with your passions and creating meaningful experiences.</p>
+                        <p>That's why we created Ready Set Journey: to help travelers like you discover destinations through the lens of what truly excites you, whether that's food, photography, history, or something entirely unique.</p>
+                    </div>
+                </div>
+                <div class="mt-12 lg:mt-0 lg:w-1/2">
+                    <img class="w-full rounded-lg shadow-xl" src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Travel planning">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Approach -->
+    <div class="py-16 bg-brand-light-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-12">
+                <h2 class="text-base text-brand-teal font-semibold tracking-wide uppercase">Our Approach</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    How We Create Your Perfect Trip
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    We believe travel should be as unique as you are. Here's how we make it happen.
+                </p>
+            </div>
+
+            <div class="mt-16">
+                <div class="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
+                    <!-- Step 1 -->
+                    <div class="relative">
+                        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-brand-teal text-white">
+                            <i data-lucide="user" class="h-6 w-6"></i>
+                        </div>
+                        <div class="ml-16">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">1. Get to Know You</h3>
+                            <p class="mt-2 text-base text-gray-500">We start by understanding your unique interests, travel style, and what makes you tick. The more we know about you, the better we can craft your perfect itinerary.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative">
+                        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-brand-teal text-white">
+                            <i data-lucide="compass" class="h-6 w-6"></i>
+                        </div>
+                        <div class="ml-16">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">2. Research & Curate</h3>
+                            <p class="mt-2 text-base text-gray-500">Our travel experts dive deep to find the best experiences, hidden gems, and local secrets that align with your interests and preferences.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="relative">
+                        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-brand-teal text-white">
+                            <i data-lucide="map" class="h-6 w-6"></i>
+                        </div>
+                        <div class="ml-16">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">3. Build Your Itinerary</h3>
+                            <p class="mt-2 text-base text-gray-500">We craft a detailed, personalized itinerary that balances must-see attractions with off-the-beaten-path experiences tailored just for you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Values -->
+    <div class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-12">
+                <h2 class="text-base text-brand-teal font-semibold tracking-wide uppercase">Our Values</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    What We Stand For
+                </p>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Value 1 -->
+                <div class="pt-6">
+                    <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                        <div class="-mt-6">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-brand-orange text-white">
+                                <i data-lucide="heart" class="h-6 w-6"></i>
+                            </div>
+                            <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Passion-Driven</h3>
+                            <p class="mt-5 text-base text-gray-500">We believe the best travel experiences come from following your passions. Whether you're a foodie, history buff, or adventure seeker, we'll design an itinerary that speaks to what you love.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="pt-6">
+                    <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                        <div class="-mt-6">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-brand-teal text-white">
+                                <i data-lucide="users" class="h-6 w-6"></i>
+                            </div>
+                            <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Local Insights</h3>
+                            <p class="mt-5 text-base text-gray-500">We work with local experts to bring you authentic experiences that most tourists never discover. Our connections ensure you get the real flavor of each destination.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="pt-6">
+                    <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                        <div class="-mt-6">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-brand-green text-white">
+                                <i data-lucide="leaf" class="h-6 w-6"></i>
+                            </div>
+                            <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Sustainable Travel</h3>
+                            <p class="mt-5 text-base text-gray-500">We're committed to responsible tourism that benefits local communities and preserves the environment for future generations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="py-16 bg-brand-light-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-12">
+                <h2 class="text-base text-brand-teal font-semibold tracking-wide uppercase">Our Team</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    The People Behind Your Perfect Trip
+                </p>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Team Member 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Team member">
+                    <div class="p-6">
+                        <h3 class="text-lg font-medium text-gray-900">Sarah Johnson</h3>
+                        <p class="text-brand-teal">Founder & CEO</p>
+                        <p class="mt-2 text-gray-600">With over 15 years in the travel industry, Sarah has explored over 60 countries and is passionate about creating meaningful travel experiences.</p>
+                        <div class="mt-4 flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-brand-teal">
+                                <i data-lucide="linkedin" class="h-5 w-5"></i>
+                                <span class="sr-only">LinkedIn</span>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-brand-teal">
+                                <i data-lucide="twitter" class="h-5 w-5"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Team member">
+                    <div class="p-6">
+                        <h3 class="text-lg font-medium text-gray-900">Michael Chen</h3>
+                        <p class="text-brand-teal">Head of Itinerary Design</p>
+                        <p class="mt-2 text-gray-600">A former tour guide with a knack for finding hidden gems, Michael specializes in creating off-the-beaten-path experiences.</p>
+                        <div class="mt-4 flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-brand-teal">
+                                <i data-lucide="linkedin" class="h-5 w-5"></i>
+                                <span class="sr-only">LinkedIn</span>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-brand-teal">
+                                <i data-lucide="twitter" class="h-5 w-5"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Team member">
+                    <div class="p-6">
+                        <h3 class="text-lg font-medium text-gray-900">Emma Rodriguez</h3>
+                        <p class="text-brand-teal">Customer Experience Lead</p>
+                        <p class="mt-2 text-gray-600">Emma ensures every client receives personalized attention and support throughout their journey with us.</p>
+                        <div class="mt-4 flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-brand-teal">
+                                <i data-lucide="linkedin" class="h-5 w-5"></i>
+                                <span class="sr-only">LinkedIn</span>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-brand-teal">
+                                <i data-lucide="twitter" class="h-5 w-5"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-brand-teal">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+            <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                <span class="block">Ready to start your journey?</span>
+                <span class="block text-brand-orange-accent">Let's create something amazing together.</span>
+            </h2>
+            <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+                <div class="inline-flex rounded-md shadow">
+                    <a href="contact.html" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-brand-teal bg-white hover:bg-gray-50">
+                        Get Started
+                    </a>
+                </div>
+                <div class="ml-3 inline-flex rounded-md shadow">
+                    <a href="how-it-works.html" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-teal bg-opacity-60 hover:bg-opacity-70">
+                        Learn How It Works
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark-neutral text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8 xl:col-span-1">
+                    <h3 class="text-2xl font-bold">Ready Set Journey</h3>
+                    <p class="text-gray-300 text-sm">
+                        Crafting personalized travel experiences that match your passions and pace.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="https://www.facebook.com/readysetjourney/" target="_blank" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">Facebook</span>
+                            <i data-lucide="facebook" class="h-6 w-6"></i>
+                        </a>
+                        <a href="https://www.instagram.com/readysetjourney/" target="_blank" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">Instagram</span>
+                            <i data-lucide="instagram" class="h-6 w-6"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">Twitter</span>
+                            <i data-lucide="twitter" class="h-6 w-6"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Navigation</h3>
+                            <ul class="mt-4 space-y-4">
+                                <li><a href="index.html" class="text-base text-gray-400 hover:text-white">Home</a></li>
+                                <li><a href="how-it-works.html" class="text-base text-gray-400 hover:text-white">How It Works</a></li>
+                                <li><a href="pricing.html" class="text-base text-gray-400 hover:text-white">Pricing</a></li>
+                                <li><a href="blog.html" class="text-base text-gray-400 hover:text-white">Blog</a></li>
+                                <li><a href="about.html" class="text-base text-gray-400 hover:text-white">About</a></li>
+                                <li><a href="contact.html" class="text-base text-gray-400 hover:text-white">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Legal</h3>
+                            <ul class="mt-4 space-y-4">
+                                <li><a href="privacy.html" class="text-base text-gray-400 hover:text-white">Privacy Policy</a></li>
+                                <li><a href="terms.html" class="text-base text-gray-400 hover:text-white">Terms of Service</a></li>
+                                <li><a href="refund.html" class="text-base text-gray-400 hover:text-white">Refund Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Contact</h3>
+                            <ul class="mt-4 space-y-4">
+                                <li class="flex">
+                                    <i data-lucide="mail" class="h-5 w-5 text-gray-400 mr-3"></i>
+                                    <span class="text-base text-gray-400">hello@readysetjourney.com</span>
+                                </li>
+                                <li class="flex">
+                                    <i data-lucide="phone" class="h-5 w-5 text-gray-400 mr-3"></i>
+                                    <span class="text-base text-gray-400">+1 (555) 123-4567</span>
+                                </li>
+                                <li class="flex">
+                                    <i data-lucide="map-pin" class="h-5 w-5 text-gray-400 mr-3"></i>
+                                    <span class="text-base text-gray-400">123 Travel St, Suite 100<br>San Francisco, CA 94107</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8">
+                <p class="text-base text-gray-400 text-center">
+                    &copy; <span id="currentYear"></span> Ready Set Journey. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            const isHidden = menu.classList.contains('hidden');
+            
+            if (isHidden) {
+                menu.classList.remove('hidden');
+                lucide.createIcons(); // Re-initialize icons after showing menu
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('mobile-menu');
+            const menuButton = document.getElementById('mobile-menu-button');
+            
+            if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+                menu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

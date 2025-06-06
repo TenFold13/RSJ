@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Ready Set Journey</title>
+    <meta name="description" content="Simple, transparent pricing for our personalized travel itinerary services. Choose the plan that works best for your next adventure.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-orange': '#FF6B35',
+                        'brand-teal': '#1B9AAA',
+                        'brand-green': '#06D6A0',
+                        'brand-light-gray': '#F8F9FA',
+                        'brand-dark-neutral': '#2B2D42',
+                        'brand-orange-accent': '#FF9E1F',
+                        'brand-white': '#FFFFFF',
+                    },
+                    fontFamily: {
+                        'sans': ['Poppins', 'sans-serif'],
+                        'body': ['Open Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-brand-light-gray font-body">
+    <!-- Navigation -->
+    <header class="py-4 md:py-5 sticky top-0 bg-brand-white/95 backdrop-blur-md z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-brand-orange">Ready Set Journey</a>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:space-x-8">
+                    <a href="index.html" class="border-transparent text-gray-500 hover:border-brand-orange hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</a>
+                    <a href="how-it-works.html" class="border-transparent text-gray-500 hover:border-brand-orange hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">How It Works</a>
+                    <a href="pricing.html" class="border-brand-orange text-brand-orange inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Pricing</a>
+                    <a href="blog.html" class="border-transparent text-gray-500 hover:border-brand-orange hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Blog</a>
+                    <a href="about.html" class="border-transparent text-gray-500 hover:border-brand-orange hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">About</a>
+                    <a href="contact.html" class="ml-8 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-brand-orange hover:bg-brand-orange-accent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-orange">Contact</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-orange" id="mobile-menu-button">
+                        <span class="sr-only">Open main menu</span>
+                        <i data-lucide="menu" class="block h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Home</a>
+                <a href="how-it-works.html" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">How It Works</a>
+                <a href="pricing.html" class="block pl-3 pr-4 py-2 border-l-4 border-brand-orange text-base font-medium text-brand-orange bg-brand-orange-50">Pricing</a>
+                <a href="blog.html" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Blog</a>
+                <a href="about.html" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">About</a>
+                <a href="contact.html" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pricing Header -->
+    <div class="bg-brand-dark-neutral text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">Simple, Transparent Pricing</h1>
+            <p class="mt-6 max-w-3xl mx-auto text-xl text-gray-300">Choose the plan that works best for your next adventure. No hidden fees, no surprises.</p>
+        </div>
+    </div>
+
+    <!-- Pricing Toggle -->
+    <div class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center">
+                <div class="bg-gray-100 p-1 rounded-lg inline-flex">
+                    <button type="button" class="px-6 py-2 rounded-md text-sm font-medium text-gray-700 bg-white shadow-sm" id="monthly-toggle">Monthly</button>
+                    <button type="button" class="ml-1 px-6 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900" id="yearly-toggle">Yearly <span class="text-brand-orange">(Save 20%)</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Plans -->
+    <div class="bg-brand-light-gray py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Basic Plan -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900">Explorer</h3>
+                        <p class="mt-2 text-gray-600">Perfect for short getaways and weekend trips</p>
+                        <div class="mt-8">
+                            <p class="text-4xl font-extrabold text-gray-900">$97</p>
+                            <p class="mt-1 text-sm text-gray-500">One-time fee</p>
+                        </div>
+                        <a href="contact.html" class="mt-8 block w-full bg-gray-800 border border-transparent rounded-md py-3 text-center text-sm font-medium text-white hover:bg-gray-900">Get Started</a>
+                    </div>
+                    <div class="bg-gray-50 p-6
+                        <h4 class="text-sm font-medium text-gray-900">What's included:</h4>
+                        <ul class="mt-4 space-y-3">
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-brand-teal flex-shrink-0 mt-0.5"></i>
+                                <span class="ml-2 text-sm text-gray-700">3-5 day custom itinerary</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-brand-teal flex-shrink-0 mt-0.5"></i>
+                                <span class="ml-2 text-sm text-gray-700">2-3 hobbies/activities</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-brand-teal flex-shrink-0 mt-0.5"></i>
+                                <span class="ml-2 text-sm text-gray-700">Personalized recommendations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-brand-teal flex-shrink-0 mt-0.5"></i>
+                                <span class="ml-2 text-sm text-gray-700">Interactive map</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-brand-teal flex-shrink-0 mt-0.5"></i>
+                                <span class="ml-2 text-sm text-gray-700">Email support</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Popular Plan -->
+                <div class="bg-white rounded-2xl shadow-xl ring-2 ring-brand-orange overflow-hidden transform scale-105 z-10">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900">Adventurer</h3>
+                                <p class="mt-2 text-gray-600">Ideal for week-long adventures</p>
+                            </div>
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium bg-brand-orange text-white">
+                                Most Popular
+                            </span>
+                        </div>
+                        <div class="mt-8">
+                            <p class="text-4xl font-extrabold text-gray-900">$197</p>
+                            <p class="mt-1 text-sm text-gray-500">One-time fee</p>
+                        </div>
+                        <a href="contact.html" class="mt-8 block w-full bg-brand-orange border border-transparent rounded-md py-3 text-center text-sm font-medium text-white hover:bg-brand-orange-accent">Get Started</a>
+                    </div>
+                    <div class="bg-gray-50 p-6">
+                        <h4 class="text-sm font-medium text-gray-900">Everything in Explorer, plus:</h4>
+                        <ul class="mt-4 space-y-3">
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-brand-teal flex-shrink-0 mt-0.5"></i>
+                                <span class="ml-2 text-sm text-gray-700">5-7 day custom itinerary</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-brand-teal flex-shrink-0 mt-0.5"></i>
+                                <span class="ml-2 text-sm text-gray-700">3-4 hobbies/activities</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-brand-teal flex-shrink-0 mt-0.5"></i>
+                                <span class="ml-2 text-sm text-gray-700">Priority support</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-brand-teal flex-shrink-0 mt-0.5"></i>
+                                <span class="ml-2 text-sm text-gray-700">2 rounds of revisions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-brand-teal flex-shrink-0 mt-0.5"></i>
+                                <span class="ml-2 text-sm text-gray-700">Offline access to itinerary</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900">Globetrotter</h3>
+                        <p class="mt-2 text-gray-600">For the ultimate travel experience</p>
+                        <div class="mt-8">
+                            <p class="text-4xl font-extrabold text-gray-900">$397</p>
+                            <p class="mt-1 text-sm text-gray-500">One-time fee</p>
+                        </div>
+                        <a href="contact.html" class="mt-8 block w-full bg-gray-800 border border-transparent rounded-md py-3 text-center text-sm font-medium text-white hover:bg-gray-900">Get Started</a>
+                    </div>
+                    <div class="bg-gray-50 p-6">
+                        <h4 class="text-sm font-medium text-gray-900">Everything in Adventurer, plus:</h4>
+                        <ul class="mt-4 space-y-3">
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-brand-teal flex-shrink-0 mt-0.5"></i>
+                                <span class="ml-2 text-sm text-gray-700">7-14 day custom itinerary</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-brand-teal flex-shrink-0 mt-0.5"></i>
+                                <span class="ml-2 text-sm text-gray-700">4-5 hobbies/activities</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-brand-teal flex-shrink-0 mt-0.5"></i>
+                                <span class="ml-2 text-sm text-gray-700">VIP concierge support</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-brand-teal flex-shrink-0 mt-0.5"></i>
+                                <span class="ml-2 text-sm text-gray-700">Unlimited revisions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-brand-teal flex-shrink-0 mt-0.5"></i>
+                                <span class="ml-2 text-sm text-gray-700">Custom packing list</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-brand-teal flex-shrink-0 mt-0.5"></i>
+                                <span class="ml-2 text-sm text-gray-700">Pre-trip consultation call</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enterprise -->
+            <div class="mt-16 bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="px-6 py-12 text-center sm:px-12 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-16">
+                    <div class="lg:w-0 lg:flex-1">
+                        <h2 class="text-2xl font-extrabold text-gray-900 sm:text-3xl">Need something custom?</h2>
+                        <p class="mt-3 max-w-3xl mx-auto text-lg text-gray-500">
+                            Have a special trip in mind? Contact us for custom group packages, multi-city itineraries, or any other special requests.
+                        </p>
+                    </div>
+                    <div class="mt-8 flex lg:mt-0 lg:ml-8">
+                        <a href="contact.html" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-brand-orange hover:bg-brand-orange-accent">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-12">
+                <h2 class="text-base text-brand-teal font-semibold tracking-wide uppercase">Frequently Asked Questions</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Everything you need to know
+                </p>
+            </div>
+
+            <div class="max-w-3xl mx-auto divide-y-2 divide-gray-200">
+                <div class="py-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">How does the process work?</h3>
+                    <p class="text-gray-600">After purchasing a plan, you'll receive a detailed questionnaire about your travel preferences, interests, and any specific requirements. Our travel experts will then create a personalized itinerary based on your responses, which you'll receive within 3-5 business days.</p>
+                </div>
+                <div class="py-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Do you book flights and accommodations?</h3>
+                    <p class="text-gray-600">No, we focus on creating personalized itineraries and recommendations. You'll be responsible for making your own bookings based on our recommendations, giving you full control over your travel plans and budget.</p>
+                </div>
+                <div class="py-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Can I request changes to my itinerary?</h3>
+                    <p class="text-gray-600">Yes! The number of revisions depends on your chosen plan. Explorer includes 1 round of revisions, Adventurer includes 2 rounds, and Globetrotter includes unlimited revisions until you're completely satisfied.</p>
+                </div>
+                <div class="py-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">How far in advance should I book?</h3>
+                    <p class="text-gray-600">We recommend reaching out at least 3-4 weeks before your trip to ensure we have enough time to create your perfect itinerary. For complex trips or peak travel seasons, 6-8 weeks in advance is ideal.</p>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <p class="text-lg text-gray-600">Still have questions?</p>
+                <a href="contact.html" class="mt-4 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-brand-orange hover:bg-brand-orange-accent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-orange">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-brand-teal">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+            <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                <span class="block">Ready to start your journey?</span>
+                <span class="block text-brand-orange-accent">Choose your plan and let's get started.</span>
+            </h2>
+            <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+                <div class="inline-flex rounded-md shadow">
+                    <a href="#pricing" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-brand-teal bg-white hover:bg-gray-50">
+                        View Plans
+                    </a>
+                </div>
+                <div class="ml-3 inline-flex rounded-md shadow">
+                    <a href="contact.html" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-teal bg-opacity-60 hover:bg-opacity-70">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark-neutral text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8 xl:col-span-1">
+                    <h3 class="text-2xl font-bold">Ready Set Journey</h3>
+                    <p class="text-gray-300 text-sm">
+                        Crafting personalized travel experiences that match your passions and pace.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="https://www.facebook.com/readysetjourney/" target="_blank" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">Facebook</span>
+                            <i data-lucide="facebook" class="h-6 w-6"></i>
+                        </a>
+                        <a href="https://www.instagram.com/readysetjourney/" target="_blank" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">Instagram</span>
+                            <i data-lucide="instagram" class="h-6 w-6"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">Twitter</span>
+                            <i data-lucide="twitter" class="h-6 w-6"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Navigation</h3>
+                            <ul class="mt-4 space-y-4">
+                                <li><a href="index.html" class="text-base text-gray-400 hover:text-white">Home</a></li>
+                                <li><a href="how-it-works.html" class="text-base text-gray-400 hover:text-white">How It Works</a></li>
+                                <li><a href="pricing.html" class="text-base text-gray-400 hover:text-white">Pricing</a></li>
+                                <li><a href="blog.html" class="text-base text-gray-400 hover:text-white">Blog</a></li>
+                                <li><a href="about.html" class="text-base text-gray-400 hover:text-white">About</a></li>
+                                <li><a href="contact.html" class="text-base text-gray-400 hover:text-white">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Legal</h3>
+                            <ul class="mt-4 space-y-4">
+                                <li><a href="privacy.html" class="text-base text-gray-400 hover:text-white">Privacy Policy</a></li>
+                                <li><a href="terms.html" class="text-base text-gray-400 hover:text-white">Terms of Service</a></li>
+                                <li><a href="refund.html" class="text-base text-gray-400 hover:text-white">Refund Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Contact</h3>
+                            <ul class="mt-4 space-y-4">
+                                <li class="flex">
+                                    <i data-lucide="mail" class="h-5 w-5 text-gray-400 mr-3"></i>
+                                    <span class="text-base text-gray-400">hello@readysetjourney.com</span>
+                                </li>
+                                <li class="flex">
+                                    <i data-lucide="phone" class="h-5 w-5 text-gray-400 mr-3"></i>
+                                    <span class="text-base text-gray-400">+1 (555) 123-4567</span>
+                                </li>
+                                <li class="flex">
+                                    <i data-lucide="map-pin" class="h-5 w-5 text-gray-400 mr-3"></i>
+                                    <span class="text-base text-gray-400">123 Travel St, Suite 100<br>San Francisco, CA 94107</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8">
+                <p class="text-base text-gray-400 text-center">
+                    &copy; <span id="currentYear"></span> Ready Set Journey. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            const isHidden = menu.classList.contains('hidden');
+            
+            if (isHidden) {
+                menu.classList.remove('hidden');
+                lucide.createIcons(); // Re-initialize icons after showing menu
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('mobile-menu');
+            const menuButton = document.getElementById('mobile-menu-button');
+            
+            if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+                menu.classList.add('hidden');
+            }
+        });
+
+        // Pricing toggle
+        const monthlyToggle = document.getElementById('monthly-toggle');
+        const yearlyToggle = document.getElementById('yearly-toggle');
+        const prices = document.querySelectorAll('.price');
+        
+        monthlyToggle.addEventListener('click', function() {
+            if (!this.classList.contains('bg-white')) {
+                this.classList.add('bg-white', 'shadow-sm');
+                yearlyToggle.classList.remove('bg-white', 'shadow-sm');
+                // Update prices to monthly
+                prices.forEach(price => {
+                    price.textContent = price.getAttribute('data-monthly');
+                });
+            }
+        });
+        
+        yearlyToggle.addEventListener('click', function() {
+            if (!this.classList.contains('bg-white')) {
+                this.classList.add('bg-white', 'shadow-sm');
+                monthlyToggle.classList.remove('bg-white', 'shadow-sm');
+                // Update prices to yearly
+                prices.forEach(price => {
+                    price.textContent = price.getAttribute('data-yearly');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
