@@ -1,6 +1,6 @@
 # Explorer's Immersive Day
 
-*Inspired by the Explorers Immersive Week: every day is a new adventure, designed for maximum discovery, connection, and growth.*
+*Inspired by the **Explorer's** Immersive Week: every day is a new adventure, designed for maximum discovery, connection, and growth.*
 
 ---
 
