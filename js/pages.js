@@ -466,5 +466,125 @@ const pages = {
               </div>
             </article>
 
-            <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:
-}
+            <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&h=250&fit=crop&crop=center" 
+                   alt="Solo traveler" 
+                   class="w-full h-48 object-cover">
+              <div class="p-6 space-y-4">
+                <div class="flex items-center space-x-2 text-sm text-slate-500">
+                  <span>January 15, 2025</span>
+                  <span>•</span>
+                  <span>7 min read</span>
+                </div>
+                <h2 class="text-xl font-display font-bold text-brand-dark hover:text-brand-orange transition-colors">
+                  The Death of "Follow Your Passion" (And What Actually Works)
+                </h2>
+                <p class="text-slate-600">
+                  That advice everyone gives you? It's terrible. Here's what successful people actually do to find meaningful work.
+                </p>
+                <a href="#" class="inline-flex items-center text-brand-orange hover:text-brand-teal font-semibold transition-colors">
+                  Read More <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop&crop=center" 
+                   alt="City exploration" 
+                   class="w-full h-48 object-cover">
+              <div class="p-6 space-y-4">
+                <div class="flex items-center space-x-2 text-sm text-slate-500">
+                  <span>January 12, 2025</span>
+                  <span>•</span>
+                  <span>6 min read</span>
+                </div>
+                <h2 class="text-xl font-display font-bold text-brand-dark hover:text-brand-orange transition-colors">
+                  Why Your Quarter-Life Crisis Is Actually a Gift
+                </h2>
+                <p class="text-slate-600">
+                  That feeling of being lost? It's not a bug, it's a feature. Here's how to use uncertainty as your compass.
+                </p>
+                <a href="#" class="inline-flex items-center text-brand-orange hover:text-brand-teal font-semibold transition-colors">
+                  Read More <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=400&h=250&fit=crop&crop=center" 
+                   alt="Cultural immersion" 
+                   class="w-full h-48 object-cover">
+              <div class="p-6 space-y-4">
+                <div class="flex items-center space-x-2 text-sm text-slate-500">
+                  <span>January 8, 2025</span>
+                  <span>•</span>
+                  <span>8 min read</span>
+                </div>
+                <h2 class="text-xl font-display font-bold text-brand-dark hover:text-brand-orange transition-colors">
+                  The Real Reason Most Travel Doesn't Change You
+                </h2>
+                <p class="text-slate-600">
+                  You've been to 20 countries but feel exactly the same? Here's what transformative travel actually looks like.
+                </p>
+                <a href="#" class="inline-flex items-center text-brand-orange hover:text-brand-teal font-semibold transition-colors">
+                  Read More <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=250&fit=crop&crop=center" 
+                   alt="Adventure planning" 
+                   class="w-full h-48 object-cover">
+              <div class="p-6 space-y-4">
+                <div class="flex items-center space-x-2 text-sm text-slate-500">
+                  <span>January 5, 2025</span>
+                  <span>•</span>
+                  <span>4 min read</span>
+                </div>
+                <h2 class="text-xl font-display font-bold text-brand-dark hover:text-brand-orange transition-colors">
+                  How to Escape the "What Should I Do With My Life?" Loop
+                </h2>
+                <p class="text-slate-600">
+                  Stop overthinking and start experimenting. A practical guide to finding direction through action.
+                </p>
+                <a href="#" class="inline-flex items-center text-brand-orange hover:text-brand-teal font-semibold transition-colors">
+                  Read More <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&h=250&fit=crop&crop=center" 
+                   alt="Sunset journey" 
+                   class="w-full h-48 object-cover">
+              <div class="p-6 space-y-4">
+                <div class="flex items-center space-x-2 text-sm text-slate-500">
+                  <span>January 1, 2025</span>
+                  <span>•</span>
+                  <span>9 min read</span>
+                </div>
+                <h2 class="text-xl font-display font-bold text-brand-dark hover:text-brand-orange transition-colors">
+                  The Midlife Pivot: It's Never Too Late to Start Over
+                </h2>
+                <p class="text-slate-600">
+                  Success without fulfillment is the ultimate failure. Here's how to redesign your life at any age.
+                </p>
+                <a href="#" class="inline-flex items-center text-brand-orange hover:text-brand-teal font-semibold transition-colors">
+                  Read More <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div class="text-center mt-16">
+            <a href="/contact" class="inline-flex items-center bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold py-4 px-8 rounded-full text-lg transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg">
+              <i data-lucide="calendar" class="w-5 h-5 mr-2"></i>
+              Ready to Start Your Journey?
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  `
+};
