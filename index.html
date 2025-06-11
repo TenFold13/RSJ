@@ -19,6 +19,11 @@
               'sans': ['Inter', 'sans-serif'],
             },
             colors: {
+              'brand-orange': '#f97316',
+              'brand-teal': '#20b2aa',
+              'brand-green': '#7cb342',
+              'brand-light': '#f8fafc',
+              'brand-dark': '#1e293b',
               'primary': {
                 50: '#fef7ee',
                 100: '#fdecd3',
@@ -30,48 +35,30 @@
                 700: '#c2410c',
                 800: '#9a3412',
                 900: '#7c2d12',
-                950: '#431407',
               },
-              'emerald': {
-                50: '#ecfdf5',
-                100: '#d1fae5',
-                200: '#a7f3d0',
-                300: '#6ee7b7',
-                400: '#34d399',
-                500: '#10b981',
-                600: '#059669',
-                700: '#047857',
-                800: '#065f46',
-                900: '#064e3b',
-                950: '#022c22',
+              'teal': {
+                50: '#f0fdfa',
+                100: '#ccfbf1',
+                200: '#99f6e4',
+                300: '#5eead4',
+                400: '#2dd4bf',
+                500: '#20b2aa',
+                600: '#0d9488',
+                700: '#0f766e',
+                800: '#115e59',
+                900: '#134e4a',
               },
-              'slate': {
-                50: '#f8fafc',
-                100: '#f1f5f9',
-                200: '#e2e8f0',
-                300: '#cbd5e1',
-                400: '#94a3b8',
-                500: '#64748b',
-                600: '#475569',
-                700: '#334155',
-                800: '#1e293b',
-                900: '#0f172a',
-                950: '#020617',
-              }
-            },
-            animation: {
-              'float': 'float 6s ease-in-out infinite',
-              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-              'gradient': 'gradient 8s linear infinite',
-            },
-            keyframes: {
-              float: {
-                '0%, 100%': { transform: 'translateY(0px)' },
-                '50%': { transform: 'translateY(-20px)' },
-              },
-              gradient: {
-                '0%, 100%': { backgroundPosition: '0% 50%' },
-                '50%': { backgroundPosition: '100% 50%' },
+              'lime': {
+                50: '#f7fee7',
+                100: '#ecfccb',
+                200: '#d9f99d',
+                300: '#bef264',
+                400: '#a3e635',
+                500: '#7cb342',
+                600: '#65a30d',
+                700: '#4d7c0f',
+                800: '#365314',
+                900: '#1a2e05',
               }
             }
           }
@@ -79,43 +66,46 @@
       }
     </script>
 </head>
-<body class="bg-white text-slate-800 antialiased font-sans">
+<body class="bg-white text-brand-dark antialiased font-sans">
 
-  <header class="py-4 md:py-6 sticky top-0 bg-white/80 backdrop-blur-xl z-50 border-b border-slate-100">
+  <header class="py-4 md:py-6 sticky top-0 bg-white/95 backdrop-blur-xl z-50 border-b border-slate-200/50 shadow-sm">
     <div class="container mx-auto px-6 flex justify-between items-center">
-      <a href="/" class="text-2xl md:text-3xl font-black text-slate-900 tracking-tight font-display hover:text-primary-600 transition-colors duration-300">Ready Set Journey</a>
+      <a href="/" class="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-300">
+        <img src="/images/RSJ Logo.jpg" alt="Ready Set Journey Logo" class="h-10 w-auto">
+        <span class="text-xl md:text-2xl font-bold text-brand-dark tracking-tight font-display hidden sm:block">Ready Set Journey</span>
+      </a>
       <nav class="hidden lg:block">
         <ul class="flex space-x-8">
-          <li><a href="/" class="nav-link text-sm text-slate-600 hover:text-primary-600 transition-colors duration-300 font-medium py-2">Home</a></li>
-          <li><a href="/about" class="nav-link text-sm text-slate-600 hover:text-primary-600 transition-colors duration-300 font-medium py-2">About</a></li>
-          <li><a href="/how-it-works" class="nav-link text-sm text-slate-600 hover:text-primary-600 transition-colors duration-300 font-medium py-2">How It Works</a></li>
-          <li><a href="/journeys" class="nav-link text-sm text-slate-600 hover:text-primary-600 transition-colors duration-300 font-medium py-2">Journeys</a></li>
-          <li><a href="/pricing" class="nav-link text-sm text-slate-600 hover:text-primary-600 transition-colors duration-300 font-medium py-2">Pricing</a></li>
-          <li><a href="/contact" class="nav-link text-sm text-slate-600 hover:text-primary-600 transition-colors duration-300 font-medium py-2">Contact</a></li>
+          <li><a href="/" class="nav-link text-sm text-slate-600 hover:text-brand-orange transition-colors duration-300 font-medium py-2">Home</a></li>
+          <li><a href="/about" class="nav-link text-sm text-slate-600 hover:text-brand-orange transition-colors duration-300 font-medium py-2">About</a></li>
+          <li><a href="/how-it-works" class="nav-link text-sm text-slate-600 hover:text-brand-orange transition-colors duration-300 font-medium py-2">How It Works</a></li>
+          <li><a href="/journeys" class="nav-link text-sm text-slate-600 hover:text-brand-orange transition-colors duration-300 font-medium py-2">Journeys</a></li>
+          <li><a href="/pricing" class="nav-link text-sm text-slate-600 hover:text-brand-orange transition-colors duration-300 font-medium py-2">Pricing</a></li>
+          <li><a href="/contact" class="nav-link text-sm text-slate-600 hover:text-brand-orange transition-colors duration-300 font-medium py-2">Contact</a></li>
         </ul>
       </nav>
       <div class="flex items-center space-x-4">
-        <a href="/contact" class="hidden md:inline-flex bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-semibold py-3 px-6 rounded-full text-sm transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl">
-          Book Your Call
+        <a href="/contact" class="hidden md:inline-flex bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold py-3 px-6 rounded-full text-sm transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl">
+          Book Your 15-Min Call
         </a>
-        <button id="mobile-menu-toggle" class="lg:hidden text-slate-600 hover:text-primary-600 transition-colors duration-300">
+        <button id="mobile-menu-toggle" class="lg:hidden text-slate-600 hover:text-brand-orange transition-colors duration-300">
           <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
       </div>
     </div>
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="lg:hidden hidden bg-white/95 backdrop-blur-xl border-t border-slate-100">
+    <div id="mobile-menu" class="lg:hidden hidden bg-white/95 backdrop-blur-xl border-t border-slate-200">
       <nav class="container mx-auto px-6 py-4">
         <ul class="space-y-3">
-          <li><a href="/" class="nav-link block text-slate-600 hover:text-primary-600 transition-colors duration-300 font-medium py-2">Home</a></li>
-          <li><a href="/about" class="nav-link block text-slate-600 hover:text-primary-600 transition-colors duration-300 font-medium py-2">About</a></li>
-          <li><a href="/how-it-works" class="nav-link block text-slate-600 hover:text-primary-600 transition-colors duration-300 font-medium py-2">How It Works</a></li>
-          <li><a href="/journeys" class="nav-link block text-slate-600 hover:text-primary-600 transition-colors duration-300 font-medium py-2">Journeys</a></li>
-          <li><a href="/pricing" class="nav-link block text-slate-600 hover:text-primary-600 transition-colors duration-300 font-medium py-2">Pricing</a></li>
-          <li><a href="/contact" class="nav-link block text-slate-600 hover:text-primary-600 transition-colors duration-300 font-medium py-2">Contact</a></li>
+          <li><a href="/" class="nav-link block text-slate-600 hover:text-brand-orange transition-colors duration-300 font-medium py-2">Home</a></li>
+          <li><a href="/about" class="nav-link block text-slate-600 hover:text-brand-orange transition-colors duration-300 font-medium py-2">About</a></li>
+          <li><a href="/how-it-works" class="nav-link block text-slate-600 hover:text-brand-orange transition-colors duration-300 font-medium py-2">How It Works</a></li>
+          <li><a href="/journeys" class="nav-link block text-slate-600 hover:text-brand-orange transition-colors duration-300 font-medium py-2">Journeys</a></li>
+          <li><a href="/pricing" class="nav-link block text-slate-600 hover:text-brand-orange transition-colors duration-300 font-medium py-2">Pricing</a></li>
+          <li><a href="/contact" class="nav-link block text-slate-600 hover:text-brand-orange transition-colors duration-300 font-medium py-2">Contact</a></li>
           <li class="pt-2">
-            <a href="/contact" class="inline-flex bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-semibold py-3 px-6 rounded-full text-sm transition-all duration-300 ease-in-out">
-              Book Your Call
+            <a href="/contact" class="inline-flex bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold py-3 px-6 rounded-full text-sm transition-all duration-300 ease-in-out">
+              Book Your 15-Min Call
             </a>
           </li>
         </ul>
@@ -131,16 +121,19 @@
     <div class="container mx-auto px-6">
       <div class="grid md:grid-cols-4 gap-8 mb-12">
         <div>
-          <h4 class="text-xl font-bold text-white mb-6 font-display">Ready Set Journey</h4>
+          <div class="flex items-center space-x-3 mb-6">
+            <img src="/images/RSJ Logo.jpg" alt="Ready Set Journey Logo" class="h-8 w-auto">
+            <h4 class="text-lg font-bold text-white font-display">Ready Set Journey</h4>
+          </div>
           <p class="text-sm leading-relaxed mb-6">Your adventure starts here. Transformative travel experiences designed for growth and discovery.</p>
           <div class="flex space-x-4">
-            <a href="#" class="text-slate-400 hover:text-primary-500 transition-colors duration-300">
+            <a href="#" class="text-slate-400 hover:text-brand-orange transition-colors duration-300">
               <i data-lucide="twitter" class="w-5 h-5"></i>
             </a>
-            <a href="#" class="text-slate-400 hover:text-primary-500 transition-colors duration-300">
+            <a href="#" class="text-slate-400 hover:text-brand-orange transition-colors duration-300">
               <i data-lucide="instagram" class="w-5 h-5"></i>
             </a>
-            <a href="#" class="text-slate-400 hover:text-primary-500 transition-colors duration-300">
+            <a href="#" class="text-slate-400 hover:text-brand-orange transition-colors duration-300">
               <i data-lucide="linkedin" class="w-5 h-5"></i>
             </a>
           </div>
@@ -148,25 +141,25 @@
         <div>
           <h5 class="text-white font-semibold mb-6 font-display">Quick Links</h5>
           <ul class="space-y-3 text-sm">
-            <li><a href="/about" class="nav-link hover:text-primary-400 transition-colors duration-300">About</a></li>
-            <li><a href="/how-it-works" class="nav-link hover:text-primary-400 transition-colors duration-300">How It Works</a></li>
-            <li><a href="/journeys" class="nav-link hover:text-primary-400 transition-colors duration-300">Journeys</a></li>
-            <li><a href="/pricing" class="nav-link hover:text-primary-400 transition-colors duration-300">Pricing</a></li>
+            <li><a href="/about" class="nav-link hover:text-brand-orange transition-colors duration-300">About</a></li>
+            <li><a href="/how-it-works" class="nav-link hover:text-brand-orange transition-colors duration-300">How It Works</a></li>
+            <li><a href="/journeys" class="nav-link hover:text-brand-orange transition-colors duration-300">Journeys</a></li>
+            <li><a href="/pricing" class="nav-link hover:text-brand-orange transition-colors duration-300">Pricing</a></li>
           </ul>
         </div>
         <div>
           <h5 class="text-white font-semibold mb-6 font-display">Support</h5>
           <ul class="space-y-3 text-sm">
-            <li><a href="/contact" class="nav-link hover:text-primary-400 transition-colors duration-300">Contact</a></li>
-            <li><a href="#" class="hover:text-primary-400 transition-colors duration-300">FAQ</a></li>
-            <li><a href="#" class="hover:text-primary-400 transition-colors duration-300">Privacy Policy</a></li>
-            <li><a href="#" class="hover:text-primary-400 transition-colors duration-300">Terms of Service</a></li>
+            <li><a href="/contact" class="nav-link hover:text-brand-orange transition-colors duration-300">Contact</a></li>
+            <li><a href="#" class="hover:text-brand-orange transition-colors duration-300">FAQ</a></li>
+            <li><a href="#" class="hover:text-brand-orange transition-colors duration-300">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-brand-orange transition-colors duration-300">Terms of Service</a></li>
           </ul>
         </div>
         <div>
           <h5 class="text-white font-semibold mb-6 font-display">Ready to Start?</h5>
           <p class="text-sm mb-4">Get your custom journey blueprint in just 15 minutes.</p>
-          <a href="/contact" class="nav-link inline-flex bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-semibold py-2 px-4 rounded-lg text-sm transition-all duration-300 ease-in-out transform hover:scale-105">
+          <a href="/contact" class="nav-link inline-flex bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold py-2 px-4 rounded-lg text-sm transition-all duration-300 ease-in-out transform hover:scale-105">
             Book Your Call
           </a>
         </div>
