@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ready Set Journey - Launch Your Next Chapter</title>
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-    <base href="/">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -36,93 +35,78 @@
 
   <header class="py-4 md:py-5 sticky top-0 bg-brand-white/95 backdrop-blur-md z-50 shadow-md">
     <div class="container mx-auto px-6 flex justify-between items-center">
-      <a href="/" class="text-2xl md:text-3xl font-extrabold text-brand-teal tracking-tight font-heading hover:text-brand-orange transition-colors duration-300">Ready Set Journey</a>
-      <nav class="hidden lg:block">
-        <ul class="flex space-x-6">
-          <li><a href="/" class="nav-link text-sm text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Home</a></li>
-          <li><a href="/about" class="nav-link text-sm text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">About RSJ</a></li>
-          <li><a href="/how-it-works" class="nav-link text-sm text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">How It Works</a></li>
-          <li><a href="/journeys" class="nav-link text-sm text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Journeys</a></li>
-          <li><a href="/pricing" class="nav-link text-sm text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Pricing</a></li>
-          <li><a href="/contact" class="nav-link text-sm text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="flex items-center space-x-4">
-        <a href="/contact" class="hidden md:inline-flex bg-brand-orange hover:bg-brand-orange-accent text-black font-semibold py-2 px-4 rounded-lg text-sm transition duration-300 ease-in-out transform hover:scale-105">
-          Start Your Journey
-        </a>
-        <button id="mobile-menu-toggle" class="lg:hidden text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300">
-          <i data-lucide="menu" class="w-6 h-6"></i>
-        </button>
-      </div>
-    </div>
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="lg:hidden hidden bg-brand-white border-t border-gray-200">
-      <nav class="container mx-auto px-6 py-4">
-        <ul class="space-y-3">
-          <li><a href="/" class="nav-link block text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Home</a></li>
-          <li><a href="/about" class="nav-link block text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">About RSJ</a></li>
-          <li><a href="/how-it-works" class="nav-link block text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">How It Works</a></li>
-          <li><a href="/journeys" class="nav-link block text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Journeys</a></li>
-          <li><a href="/pricing" class="nav-link block text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Pricing</a></li>
-          <li><a href="/contact" class="nav-link block text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Contact</a></li>
-          <li class="pt-2">
-            <a href="/contact" class="inline-flex bg-brand-orange hover:bg-brand-orange-accent text-black font-semibold py-2 px-4 rounded-lg text-sm transition duration-300 ease-in-out">
-              Start Your Journey
-            </a>
-          </li>
+      <a href="#" class="text-2xl md:text-3xl font-extrabold text-brand-teal tracking-tight font-heading hover:text-brand-orange transition-colors duration-300">Ready Set Journey</a>
+      <nav>
+        <ul class="flex flex-wrap justify-end space-x-2 sm:space-x-3 md:space-x-4">
+          <li><a href="#hero" class="text-xs sm:text-sm text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Home</a></li>
+          <li><a href="#who-its-for" class="text-xs sm:text-sm text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Who For</a></li>
+          <li><a href="#why-rsj" class="text-xs sm:text-sm text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Our Why</a></li>
+          <li><a href="#immersive-journeys" class="text-xs sm:text-sm text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Journeys</a></li>
+          <li><a href="#sample-itinerary" class="text-xs sm:text-sm text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Itinerary</a></li>
+          <li><a href="#pricing" class="text-xs sm:text-sm text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Pricing</a></li>
+          <li><a href="#cta" class="text-xs sm:text-sm text-brand-dark-neutral hover:text-brand-orange transition-colors duration-300 font-medium py-2">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main id="main-content">
-    <!-- Content will be dynamically loaded here -->
+  <main>
+    <section id="hero" class="relative text-brand-white py-20 md:py-32 min-h-[60vh] md:min-h-[70vh] flex items-center">
+      <div class="absolute inset-0">
+        <img src="https://r2.flowith.net/files/o/1748969255266-transformative_future_ready_travel_landscape_index_2@1024x1024.png" alt="Panoramic view of a breathtaking, futuristic landscape blending nature and innovation, symbolizing a transformative future-ready journey" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/60"></div>
+      </div>
+      <div class="relative container mx-auto px-6 text-center z-10">
+        <h2 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight font-heading">Design Your Future-Ready Chapter.</h2>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-100 mb-8 font-sans">
+          Ready Set Journey isn't just a trip planner; it's your launchpad to a <strong>future-ready</strong> life filled with passion, <strong>learning, networking, exploration, and genuine immersion</strong>. We craft experiences tailored to what truly ignites you.
+        </p>
+      </div>
+    </section>
+
+    <!-- rest of file unchanged up to the why section -->
+
+    <section id="why-rsj" class="py-16 md:py-24 bg-brand-teal/5">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl md:text-4xl font-bold text-center text-brand-teal mb-12 md:mb-16 font-heading">Our Why</h3>
+            <div class="md:flex md:items-center md:space-x-12">
+                <div class="md:w-2/5 lg:w-1/3 mb-10 md:mb-0">
+                    <img src="https://r2.flowith.net/files/o/1748969252667-collaborative_professional_workshop_in_luxury_travel_setting_index_0@1024x1024.png" alt="Professionals engaged in a collaborative workshop in a modern, inspiring setting, reflecting learning and networking." class="rounded-xl shadow-2xl w-full object-cover h-auto max-h-[450px]">
+                </div>
+                <div class="md:w-3/5 lg:w-2/3 space-y-8">
+                    <div>
+                        <div class="flex items-center mb-3">
+                            <i data-lucide="sparkles" class="text-brand-orange w-8 h-8 mr-3"></i>
+                            <h4 class="text-2xl font-semibold text-brand-dark-neutral font-heading">Transformative Experiences</h4>
+                        </div>
+                        <p class="text-brand-dark-neutral leading-relaxed text-lg font-sans">Too many trips feel transactional. We design journeys that immerse you in new skills and passions, from night sky photography in remote deserts to kayaking hidden coastal inlets, so you do not just see the world, you become part of it.</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center mb-3">
+                            <i data-lucide="users" class="text-brand-orange w-8 h-8 mr-3"></i>
+                            <h4 class="text-2xl font-semibold text-brand-dark-neutral font-heading">Deep Human Connection</h4>
+                        </div>
+                        <p class="text-brand-dark-neutral leading-relaxed text-lg font-sans">Whether you are a Gen Z explorer, a mid-career professional craving a reset, or a retiree seeking fresh inspiration, our itineraries unite you with local communities and kindred travelers. Shared moments, such as cooking communal meals and storytelling around a campfire, stay with you long after your suitcase is unpacked.</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center mb-3">
+                            <i data-lucide="compass" class="text-brand-orange w-8 h-8 mr-3"></i>
+                            <h4 class="text-2xl font-semibold text-brand-dark-neutral font-heading">Purpose-Driven Planning</h4>
+                        </div>
+                        <p class="text-brand-dark-neutral leading-relaxed text-lg font-sans">From student gap-year treks to luxury executive retreats, we have learned the real value of travel is what you bring home: confidence, perspective, and renewed purpose. Each thoughtfully planned adventure can spark new passions, forge lifelong friendships, and equip you with skills you never knew you needed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- rest of file unchanged -->
+
   </main>
 
-  <footer class="py-10 bg-brand-dark-neutral text-brand-light-gray/70">
-    <div class="container mx-auto px-6">
-      <div class="grid md:grid-cols-4 gap-8 mb-8">
-        <div>
-          <h4 class="text-brand-white font-semibold mb-4 font-heading">Ready Set Journey</h4>
-          <p class="text-sm leading-relaxed">Your adventure starts here. Transformative travel experiences designed for growth and discovery.</p>
-        </div>
-        <div>
-          <h5 class="text-brand-white font-semibold mb-4 font-heading">Quick Links</h5>
-          <ul class="space-y-2 text-sm">
-            <li><a href="/about" class="nav-link hover:text-brand-orange transition-colors duration-300">About</a></li>
-            <li><a href="/how-it-works" class="nav-link hover:text-brand-orange transition-colors duration-300">How It Works</a></li>
-            <li><a href="/journeys" class="nav-link hover:text-brand-orange transition-colors duration-300">Journeys</a></li>
-            <li><a href="/pricing" class="nav-link hover:text-brand-orange transition-colors duration-300">Pricing</a></li>
-          </ul>
-        </div>
-        <div>
-          <h5 class="text-brand-white font-semibold mb-4 font-heading">Support</h5>
-          <ul class="space-y-2 text-sm">
-            <li><a href="/contact" class="nav-link hover:text-brand-orange transition-colors duration-300">Contact</a></li>
-            <li><a href="#" class="hover:text-brand-orange transition-colors duration-300">FAQ</a></li>
-            <li><a href="#" class="hover:text-brand-orange transition-colors duration-300">Privacy Policy</a></li>
-            <li><a href="#" class="hover:text-brand-orange transition-colors duration-300">Terms of Service</a></li>
-          </ul>
-        </div>
-        <div>
-          <h5 class="text-brand-white font-semibold mb-4 font-heading">Connect</h5>
-          <div class="flex space-x-4">
-            <a href="#" class="text-brand-light-gray/70 hover:text-brand-orange transition-colors duration-300">
-              <i data-lucide="twitter" class="w-5 h-5"></i>
-            </a>
-            <a href="#" class="text-brand-light-gray/70 hover:text-brand-orange transition-colors duration-300">
-              <i data-lucide="instagram" class="w-5 h-5"></i>
-            </a>
-            <a href="#" class="text-brand-light-gray/70 hover:text-brand-orange transition-colors duration-300">
-              <i data-lucide="linkedin" class="w-5 h-5"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="border-t border-brand-light-gray/20 pt-6 text-center text-sm">
-        <p>&copy; <span id="currentYear"></span> Ready Set Journey. Your adventure starts here.</p>
-      </div>
+  <footer class="py-10 bg-brand-dark-neutral text-brand-light-gray/70 text-center">
+    <div class="container mx-auto px-6 font-sans">
+      <p>&copy; <span id="currentYear"></span> Ready Set Journey. Your adventure starts here.</p>
     </div>
   </footer>
 
@@ -133,8 +117,6 @@
 
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script src="/js/router.js"></script>
-  <script src="/js/pages.js"></script>
-  <script src="/js/main.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
