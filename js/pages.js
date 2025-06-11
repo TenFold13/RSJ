@@ -233,88 +233,93 @@ const pages = {
         <div class="max-w-4xl mx-auto">
           <div class="text-center space-y-6 mb-16">
             <h1 class="text-5xl lg:text-6xl font-display font-bold text-brand-dark">
-              About <span class="text-brand-orange">Ready</span> <span class="text-brand-teal">Set</span> <span class="text-brand-green">Journey</span>
+              About <span class="text-brand-orange">Ready Set Journey</span>
             </h1>
             <p class="text-xl text-slate-600 leading-relaxed">
-              Travel isn't just about seeing places – it's about discovering who you're meant to become.
+              Adventure, unlocked. Your launchpad to a future-ready life filled with passion, learning, networking, exploration, and genuine immersion.
             </p>
           </div>
 
-          <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
-            <div class="space-y-6">
-              <h2 class="text-3xl font-display font-bold text-brand-dark">Why This Matters</h2>
-              <div class="space-y-4 text-lg text-slate-700 leading-relaxed">
-                <p>
-                  Most people don't even know what they want out of life, let alone where they should travel. 
-                  So what do they do? They default to whatever their parents did: university, some dead-end job, 
-                  or a bland all-inclusive vacation where the only adventure is not getting food poisoning.
-                </p>
-                <p>
-                  Ready Set Journey isn't just a trip planning service. It's a launchpad for your next chapter — 
-                  whether that's a gap year, a midlife pivot, a break from the grind, or figuring out what 
-                  you want to do before wasting years in the wrong direction.
-                </p>
-              </div>
-            </div>
-            <div class="relative">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop&crop=center" 
-                   alt="Ready Set Journey founder" 
-                   class="rounded-2xl shadow-xl w-full">
-              <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-brand-teal/20 rounded-full blur-2xl"></div>
-            </div>
-          </div>
-
-          <div class="bg-gradient-to-br from-slate-50 to-white rounded-3xl p-12 mb-16">
-            <h2 class="text-3xl font-display font-bold text-brand-dark mb-8 text-center">What Makes This Different</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-              <div class="space-y-4">
-                <div class="w-12 h-12 bg-brand-orange/20 rounded-full flex items-center justify-center">
-                  <i data-lucide="compass" class="w-6 h-6 text-brand-orange"></i>
-                </div>
-                <h3 class="text-xl font-semibold text-brand-dark">Purpose Over Tourism</h3>
-                <p class="text-slate-600">This isn't about seeing stuff. It's about doing and discovering — new skills, new people, new sides of yourself.</p>
-              </div>
-              
-              <div class="space-y-4">
-                <div class="w-12 h-12 bg-brand-teal/20 rounded-full flex items-center justify-center">
-                  <i data-lucide="users" class="w-6 h-6 text-brand-teal"></i>
-                </div>
-                <h3 class="text-xl font-semibold text-brand-dark">Meaningful Connections</h3>
-                <p class="text-slate-600">Build relationships with inspiring locals and fellow travelers who share your values and ambitions.</p>
-              </div>
-              
-              <div class="space-y-4">
-                <div class="w-12 h-12 bg-brand-green/20 rounded-full flex items-center justify-center">
-                  <i data-lucide="trending-up" class="w-6 h-6 text-brand-green"></i>
-                </div>
-                <h3 class="text-xl font-semibold text-brand-dark">Future-Ready Skills</h3>
-                <p class="text-slate-600">Return with practical abilities and insights that directly apply to your career and life goals.</p>
-              </div>
-              
-              <div class="space-y-4">
-                <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                  <i data-lucide="lightbulb" class="w-6 h-6 text-purple-600"></i>
-                </div>
-                <h3 class="text-xl font-semibold text-brand-dark">Clarity & Direction</h3>
-                <p class="text-slate-600">Come back knowing exactly what you want to do next — and save yourself years of uncertainty.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="text-center space-y-8">
-            <h2 class="text-3xl font-display font-bold text-brand-dark">The Real Benefit</h2>
-            <div class="bg-gradient-to-br from-brand-orange/10 to-brand-teal/10 rounded-2xl p-8 space-y-4">
-              <p class="text-xl text-slate-700 leading-relaxed">
-                You come back with more than souvenirs. You come back with new passions, connections, 
-                and a story you don't have to embellish. Most importantly, you figure out what you want 
-                to do next — potentially saving yourself years and thousands of dollars in the wrong direction.
+          <div class="space-y-16">
+            <div class="text-center space-y-8">
+              <h2 class="text-3xl font-display font-bold text-brand-dark">Our Mission</h2>
+              <p class="text-lg text-slate-700 leading-relaxed max-w-3xl mx-auto">
+                We believe travel should be more than just checking destinations off a list. Ready Set Journey creates 
+                transformative experiences that prepare you for the future while enriching your present. Every journey 
+                is designed to expand your horizons, build meaningful connections, and equip you with the skills and 
+                perspectives needed for what's next.
               </p>
             </div>
-            
-            <a href="/contact" class="inline-flex items-center bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold py-4 px-8 rounded-full text-lg transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg">
-              <i data-lucide="calendar" class="w-5 h-5 mr-2"></i>
-              Start Your Journey Today
-            </a>
+
+            <div class="bg-gradient-to-br from-slate-50 to-white rounded-3xl p-12">
+              <h2 class="text-3xl font-display font-bold text-brand-dark mb-8 text-center">Our Core Values</h2>
+              <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center space-y-4">
+                  <div class="w-16 h-16 bg-brand-orange/20 rounded-full flex items-center justify-center mx-auto">
+                    <i data-lucide="heart" class="w-8 h-8 text-brand-orange"></i>
+                  </div>
+                  <h3 class="text-xl font-semibold text-brand-dark">Passion</h3>
+                  <p class="text-slate-600">Discover what truly ignites your soul through immersive experiences.</p>
+                </div>
+                
+                <div class="text-center space-y-4">
+                  <div class="w-16 h-16 bg-brand-teal/20 rounded-full flex items-center justify-center mx-auto">
+                    <i data-lucide="book-open" class="w-8 h-8 text-brand-teal"></i>
+                  </div>
+                  <h3 class="text-xl font-semibold text-brand-dark">Learning</h3>
+                  <p class="text-slate-600">Gain future-ready skills and knowledge that prepare you for tomorrow's challenges.</p>
+                </div>
+                
+                <div class="text-center space-y-4">
+                  <div class="w-16 h-16 bg-brand-green/20 rounded-full flex items-center justify-center mx-auto">
+                    <i data-lucide="users" class="w-8 h-8 text-brand-green"></i>
+                  </div>
+                  <h3 class="text-xl font-semibold text-brand-dark">Networking</h3>
+                  <p class="text-slate-600">Build meaningful relationships with inspiring people who share your values.</p>
+                </div>
+                
+                <div class="text-center space-y-4">
+                  <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto">
+                    <i data-lucide="compass" class="w-8 h-8 text-purple-600"></i>
+                  </div>
+                  <h3 class="text-xl font-semibold text-brand-dark">Exploration</h3>
+                  <p class="text-slate-600">Venture beyond tourist traps to discover authentic cultures and hidden gems.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div class="bg-white rounded-2xl p-8 shadow-lg text-center space-y-4">
+                <h3 class="text-2xl font-display font-bold text-brand-orange">Recent Graduates</h3>
+                <p class="text-slate-600">The "Now What?" crowd seeking direction and purpose beyond the traditional path.</p>
+              </div>
+              
+              <div class="bg-white rounded-2xl p-8 shadow-lg text-center space-y-4">
+                <h3 class="text-2xl font-display font-bold text-brand-teal">Burned-Out Professionals</h3>
+                <p class="text-slate-600">Looking for meaningful sabbaticals and career clarity away from the corporate grind.</p>
+              </div>
+              
+              <div class="bg-white rounded-2xl p-8 shadow-lg text-center space-y-4">
+                <h3 class="text-2xl font-display font-bold text-brand-green">Midlife Navigators</h3>
+                <p class="text-slate-600">Contemplating their next act and seeking new passions and perspectives.</p>
+              </div>
+              
+              <div class="bg-white rounded-2xl p-8 shadow-lg text-center space-y-4">
+                <h3 class="text-2xl font-display font-bold text-purple-600">Discerning Retirees</h3>
+                <p class="text-slate-600">Wanting more than generic getaways and seeking meaningful adventures.</p>
+              </div>
+            </div>
+
+            <div class="text-center space-y-8">
+              <h2 class="text-3xl font-display font-bold text-brand-dark">Ready to Begin?</h2>
+              <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                Your transformative journey starts with a simple conversation. Let's discover what adventure awaits you.
+              </p>
+              <a href="/contact" class="inline-flex items-center bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold py-4 px-8 rounded-full text-lg transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg">
+                <i data-lucide="calendar" class="w-5 h-5 mr-2"></i>
+                Book Your 15-Min Call
+              </a>
+            </div>
           </div>
         </div>
       </div>
