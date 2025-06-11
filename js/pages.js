@@ -233,7 +233,7 @@ const pages = {
         <div class="max-w-4xl mx-auto">
           <div class="text-center space-y-6 mb-16">
             <h1 class="text-5xl lg:text-6xl font-display font-bold text-brand-dark">
-              About <span class="text-brand-orange">Bobby</span> <span class="text-brand-teal">Jones</span>
+              About <span class="text-brand-orange">Ready</span> <span class="text-brand-teal">Set</span> <span class="text-brand-green">Journey</span>
             </h1>
             <p class="text-xl text-slate-600 leading-relaxed">
               Travel isn't just about seeing places – it's about discovering who you're meant to become.
@@ -250,7 +250,7 @@ const pages = {
                   or a bland all-inclusive vacation where the only adventure is not getting food poisoning.
                 </p>
                 <p>
-                  Bobby Jones isn't just a trip planning service. It's a launchpad for your next chapter — 
+                  Ready Set Journey isn't just a trip planning service. It's a launchpad for your next chapter — 
                   whether that's a gap year, a midlife pivot, a break from the grind, or figuring out what 
                   you want to do before wasting years in the wrong direction.
                 </p>
@@ -258,7 +258,7 @@ const pages = {
             </div>
             <div class="relative">
               <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop&crop=center" 
-                   alt="Bobby Jones" 
+                   alt="Ready Set Journey founder" 
                    class="rounded-2xl shadow-xl w-full">
               <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-brand-teal/20 rounded-full blur-2xl"></div>
             </div>
