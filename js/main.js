@@ -22,19 +22,19 @@ document.addEventListener('DOMContentLoaded', () => {
   // Set up routes
   router.addRoute('/', () => {
     document.getElementById('main-content').innerHTML = pages.home();
-    document.title = 'Ready Set Journey - Launch Your Next Chapter';
+    document.title = 'Bobby Jones - Launch Your Next Chapter';
     lucide.createIcons();
   });
 
   router.addRoute('/about', () => {
     document.getElementById('main-content').innerHTML = pages.about();
-    document.title = 'About - Ready Set Journey';
+    document.title = 'About - Bobby Jones';
     lucide.createIcons();
   });
 
   router.addRoute('/how-it-works', () => {
     document.getElementById('main-content').innerHTML = pages.howItWorks();
-    document.title = 'How It Works & Sample Journeys - Ready Set Journey';
+    document.title = 'How It Works & Sample Journeys - Bobby Jones';
     lucide.createIcons();
     
     // Load the markdown itinerary if the element exists
@@ -47,19 +47,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   router.addRoute('/blog', () => {
     document.getElementById('main-content').innerHTML = pages.blog();
-    document.title = 'Blog - Ready Set Journey';
+    document.title = 'Blog - Bobby Jones';
     lucide.createIcons();
   });
 
   router.addRoute('/pricing', () => {
     document.getElementById('main-content').innerHTML = pages.pricing();
-    document.title = 'Pricing - Ready Set Journey';
+    document.title = 'Pricing - Bobby Jones';
     lucide.createIcons();
   });
 
   router.addRoute('/contact', () => {
     document.getElementById('main-content').innerHTML = pages.contact();
-    document.title = 'Contact & Book Your Call - Ready Set Journey';
+    document.title = 'Contact & Book Your Call - Bobby Jones';
     lucide.createIcons();
     initializeSchedulingForm();
   });
@@ -155,14 +155,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
     
+    // Combine first and last name
+    const fullName = `${data.firstName} ${data.lastName}`;
+    
     // Format the email body
     const [date, time] = data.timeSlot.split('_');
-    const emailBody = `Hi Ready Set Journey Team!
+    const emailBody = `Hi Bobby!
 
 I'd love to schedule my 15-minute discovery call to discuss my custom journey blueprint.
 
 PERSONAL DETAILS:
-Name: ${data.fullName}
+Name: ${fullName}
 Email: ${data.email}
 Phone: ${data.phone || 'Not provided'}
 
@@ -188,13 +191,13 @@ ${data.timeframe}
 
 ${data.additionalInfo ? `ADDITIONAL INFO:\n${data.additionalInfo}` : ''}
 
-Looking forward to discussing how Ready Set Journey can create my perfect adventure!
+Looking forward to discussing how you can create my perfect adventure!
 
 Best regards,
-${data.fullName}`;
+${fullName}`;
 
     // Create mailto link
-    const mailtoLink = `mailto:hello@readysetjourney.com?subject=15-Min Call Request - ${data.fullName}&body=${encodeURIComponent(emailBody)}`;
+    const mailtoLink = `mailto:hello@bobbyjonesadventures.com?subject=15-Min Discovery Call Request - ${fullName}&body=${encodeURIComponent(emailBody)}`;
     
     // Open email client
     window.location.href = mailtoLink;
@@ -216,6 +219,11 @@ ${data.fullName}`;
       submitBtn.classList.remove('bg-brand-green', 'cursor-not-allowed');
       submitBtn.classList.add('bg-brand-orange', 'hover:bg-brand-orange/90');
       form.reset();
+      // Regenerate time slots
+      const timeSlots = document.getElementById('time-slots');
+      if (timeSlots) {
+        generateTimeSlots(timeSlots);
+      }
       lucide.createIcons();
     }, 5000);
   }
