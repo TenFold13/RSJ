@@ -22,19 +22,19 @@ document.addEventListener('DOMContentLoaded', () => {
   // Set up routes
   router.addRoute('/', () => {
     document.getElementById('main-content').innerHTML = pages.home();
-    document.title = 'Bobby Jones - Launch Your Next Chapter';
+    document.title = 'Ready Set Journey - Launch Your Next Chapter';
     lucide.createIcons();
   });
 
   router.addRoute('/about', () => {
     document.getElementById('main-content').innerHTML = pages.about();
-    document.title = 'About - Bobby Jones';
+    document.title = 'About - Ready Set Journey';
     lucide.createIcons();
   });
 
   router.addRoute('/how-it-works', () => {
     document.getElementById('main-content').innerHTML = pages.howItWorks();
-    document.title = 'How It Works & Sample Journeys - Bobby Jones';
+    document.title = 'How It Works & Sample Journeys - Ready Set Journey';
     lucide.createIcons();
     
     // Load the markdown itinerary if the element exists
@@ -47,19 +47,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   router.addRoute('/blog', () => {
     document.getElementById('main-content').innerHTML = pages.blog();
-    document.title = 'Blog - Bobby Jones';
+    document.title = 'Blog - Ready Set Journey';
     lucide.createIcons();
   });
 
   router.addRoute('/pricing', () => {
     document.getElementById('main-content').innerHTML = pages.pricing();
-    document.title = 'Pricing - Bobby Jones';
+    document.title = 'Pricing - Ready Set Journey';
     lucide.createIcons();
   });
 
   router.addRoute('/contact', () => {
     document.getElementById('main-content').innerHTML = pages.contact();
-    document.title = 'Contact & Book Your Call - Bobby Jones';
+    document.title = 'Contact & Book Your Call - Ready Set Journey';
     lucide.createIcons();
     initializeSchedulingForm();
   });
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Format the email body
     const [date, time] = data.timeSlot.split('_');
-    const emailBody = `Hi Bobby!
+    const emailBody = `Hi Ready Set Journey!
 
 I'd love to schedule my 15-minute discovery call to discuss my custom journey blueprint.
 
@@ -197,7 +197,7 @@ Best regards,
 ${fullName}`;
 
     // Create mailto link
-    const mailtoLink = `mailto:hello@bobbyjonesadventures.com?subject=15-Min Discovery Call Request - ${fullName}&body=${encodeURIComponent(emailBody)}`;
+    const mailtoLink = `mailto:hello@readysetjourney.com?subject=15-Min Discovery Call Request - ${fullName}&body=${encodeURIComponent(emailBody)}`;
     
     // Open email client
     window.location.href = mailtoLink;
