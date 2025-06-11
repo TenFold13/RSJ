@@ -1,0 +1,17 @@
+{
+  "name": "ready-set-journey",
+  "version": "1.0.0",
+  "description": "Ready Set Journey - Launch Your Next Chapter",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve . -p 3000",
+    "start": "npx serve . -p 3000",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": ["travel", "journey", "adventure", "transformation"],
+  "author": "Ready Set Journey",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
