@@ -467,3 +467,4 @@ const pages = {
             </article>
 
             <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:
+}
