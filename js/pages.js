@@ -501,7 +501,7 @@ const pages = {
                 <div class="flex items-center space-x-2 text-sm text-slate-500">
                   <span>January 12, 2025</span>
                   <span>•</span>
-                  <span>6 min read</span>
+                  <span>7 min read</span>
                 </div>
                 <h2 class="text-xl font-display font-bold text-brand-dark hover:text-brand-orange transition-colors">
                   Why Your Quarter-Life Crisis Is Actually a Gift
@@ -587,6 +587,357 @@ const pages = {
               <i data-lucide="calendar" class="w-5 h-5 mr-2"></i>
               Ready to Start Your Journey?
             </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  `,
+
+  pricing: () => `
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center space-y-6 mb-16">
+            <h1 class="text-5xl lg:text-6xl font-display font-bold text-brand-dark">
+              Simple <span class="text-brand-orange">Pricing</span>
+            </h1>
+            <p class="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+              Choose the level of support that matches your journey. Every plan includes a personalized blueprint designed just for you.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <!-- Essential Plan -->
+            <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-slate-100">
+              <div class="text-center space-y-6">
+                <h3 class="text-2xl font-display font-bold text-brand-dark">Essential</h3>
+                <div class="space-y-2">
+                  <div class="text-4xl font-bold text-brand-orange">$497</div>
+                  <p class="text-slate-600">Perfect for first-time adventurers</p>
+                </div>
+                
+                <ul class="space-y-4 text-left">
+                  <li class="flex items-start space-x-3">
+                    <i data-lucide="check" class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0"></i>
+                    <span class="text-slate-700">15-minute discovery call</span>
+                  </li>
+                  <li class="flex items-start space-x-3">
+                    <i data-lucide="check" class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0"></i>
+                    <span class="text-slate-700">Personalized journey blueprint</span>
+                  </li>
+                  <li class="flex items-start space-x-3">
+                    <i data-lucide="check" class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0"></i>
+                    <span class="text-slate-700">Curated destinations & activities</span>
+                  </li>
+                  <li class="flex items-start space-x-3">
+                    <i data-lucide="check" class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0"></i>
+                    <span class="text-slate-700">Local connections & contacts</span>
+                  </li>
+                  <li class="flex items-start space-x-3">
+                    <i data-lucide="check" class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0"></i>
+                    <span class="text-slate-700">Accommodation recommendations</span>
+                  </li>
+                  <li class="flex items-start space-x-3">
+                    <i data-lucide="check" class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0"></i>
+                    <span class="text-slate-700">Digital blueprint delivery</span>
+                  </li>
+                </ul>
+                
+                <a href="/contact" class="block w-full bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold py-4 px-6 rounded-full text-lg transition-all duration-300 ease-in-out transform hover:scale-105">
+                  Get Started
+                </a>
+              </div>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="bg-gradient-to-br from-brand-orange to-brand-teal rounded-3xl p-8 shadow-xl transform scale-105 relative">
+              <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <span class="bg-white text-brand-orange px-4 py-2 rounded-full text-sm font-semibold">Most Popular</span>
+              </div>
+              <div class="text-center space-y-6 text-white">
+                <h3 class="text-2xl font-display font-bold">Premium</h3>
+                <div class="space-y-2">
+                  <div class="text-4xl font-bold">$997</div>
+                  <p class="opacity-90">For serious life changers</p>
+                </div>
+                
+                <ul class="space-y-4 text-left">
+                  <li class="flex items-start space-x-3">
+                    <i data-lucide="check" class="w-5 h-5 text-white mt-0.5 flex-shrink-0"></i>
+                    <span>Everything in Essential, plus:</span>
+                  </li>
+                  <li class="flex items-start space-x-3">
+                    <i data-lucide="check" class="w-5 h-5 text-white mt-0.5 flex-shrink-0"></i>
+                    <span>30-minute deep-dive consultation</span>
+                  </li>
+                  <li class="flex items-start space-x-3">
+                    <i data-lucide="check" class="w-5 h-5 text-white mt-0.5 flex-shrink-0"></i>
+                    <span>Skill-building opportunities</span>
+                  </li>
+                  <li class="flex items-start space-x-3">
+                    <i data-lucide="check" class="w-5 h-5 text-white mt-0.5 flex-shrink-0"></i>
+                    <span>Pre-departure preparation call</span>
+                  </li>
+                  <li class="flex items-start space-x-3">
+                    <i data-lucide="check" class="w-5 h-5 text-white mt-0.5 flex-shrink-0"></i>
+                    <span>24/7 emergency support</span>
+                  </li>
+                  <li class="flex items-start space-x-3">
+                    <i data-lucide="check" class="w-5 h-5 text-white mt-0.5 flex-shrink-0"></i>
+                    <span>Post-journey integration call</span>
+                  </li>
+                  <li class="flex items-start space-x-3">
+                    <i data-lucide="check" class="w-5 h-5 text-white mt-0.5 flex-shrink-0"></i>
+                    <span>Exclusive community access</span>
+                  </li>
+                </ul>
+                
+                <a href="/contact" class="block w-full bg-white text-brand-orange hover:bg-slate-100 font-semibold py-4 px-6 rounded-full text-lg transition-all duration-300 ease-in-out transform hover:scale-105">
+                  Get Started
+                </a>
+              </div>
+            </div>
+
+            <!-- Elite Plan -->
+            <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-slate-100">
+              <div class="text-center space-y-6">
+                <h3 class="text-2xl font-display font-bold text-brand-dark">Elite</h3>
+                <div class="space-y-2">
+                  <div class="text-4xl font-bold text-brand-teal">$1,997</div>
+                  <p class="text-slate-600">Complete transformation package</p>
+                </div>
+                
+                <ul class="space-y-4 text-left">
+                  <li class="flex items-start space-x-3">
+                    <i data-lucide="check" class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0"></i>
+                    <span class="text-slate-700">Everything in Premium, plus:</span>
+                  </li>
+                  <li class="flex items-start space-x-3">
+                    <i data-lucide="check" class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0"></i>
+                    <span class="text-slate-700">60-minute strategy session</span>
+                  </li>
+                  <li class="flex items-start space-x-3">
+                    <i data-lucide="check" class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0"></i>
+                    <span class="text-slate-700">Multiple destination options</span>
+                  </li>
+                  <li class="flex items-start space-x-3">
+                    <i data-lucide="check" class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0"></i>
+                    <span class="text-slate-700">VIP local introductions</span>
+                  </li>
+                  <li class="flex items-start space-x-3">
+                    <i data-lucide="check" class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0"></i>
+                    <span class="text-slate-700">Mid-journey check-in call</span>
+                  </li>
+                  <li class="flex items-start space-x-3">
+                    <i data-lucide="check" class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0"></i>
+                    <span class="text-slate-700">3-month follow-up support</span>
+                  </li>
+                  <li class="flex items-start space-x-3">
+                    <i data-lucide="check" class="w-5 h-5 text-brand-green mt-0.5 flex-shrink-0"></i>
+                    <span class="text-slate-700">Next adventure planning</span>
+                  </li>
+                </ul>
+                
+                <a href="/contact" class="block w-full bg-brand-teal hover:bg-brand-teal/90 text-white font-semibold py-4 px-6 rounded-full text-lg transition-all duration-300 ease-in-out transform hover:scale-105">
+                  Get Started
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Section -->
+          <div class="bg-slate-50 rounded-3xl p-12">
+            <h2 class="text-3xl font-display font-bold text-brand-dark mb-8 text-center">Frequently Asked Questions</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+              <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-brand-dark">What's included in the blueprint?</h3>
+                <p class="text-slate-600">Your blueprint is a comprehensive digital guide tailored to your goals, including curated destinations, meaningful activities, local connections, accommodation recommendations, and insider tips.</p>
+              </div>
+              
+              <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-brand-dark">Do you book travel for me?</h3>
+                <p class="text-slate-600">No, we provide the blueprint and you maintain complete control over your bookings. This gives you flexibility while ensuring you get the best deals and can make changes as needed.</p>
+              </div>
+              
+              <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-brand-dark">How long does it take to receive my blueprint?</h3>
+                <p class="text-slate-600">After your discovery call, you'll receive your personalized blueprint within 5 business days. Premium and Elite plans may include additional consultation calls before delivery.</p>
+              </div>
+              
+              <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-brand-dark">What if I need to change my plans?</h3>
+                <p class="text-slate-600">Your blueprint is designed to be flexible. Premium and Elite plans include support for modifications, and we're always available to help you adapt your journey as needed.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-16 space-y-8">
+            <h2 class="text-3xl font-display font-bold text-brand-dark">Ready to Transform Your Life?</h2>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+              Every transformative journey starts with a single conversation. Book your free 15-minute call today.
+            </p>
+            <a href="/contact" class="inline-flex items-center bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold py-4 px-8 rounded-full text-lg transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg">
+              <i data-lucide="calendar" class="w-5 h-5 mr-2"></i>
+              Book Your Free 15-Min Call
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  `,
+
+  contact: () => `
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center space-y-6 mb-16">
+            <h1 class="text-5xl lg:text-6xl font-display font-bold text-brand-dark">
+              Let's <span class="text-brand-orange">Connect</span>
+            </h1>
+            <p class="text-xl text-slate-600 leading-relaxed">
+              Your transformative journey starts with a simple conversation. Book your free 15-minute discovery call today.
+            </p>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-16 items-start">
+            <div class="space-y-8">
+              <div class="space-y-6">
+                <h2 class="text-3xl font-display font-bold text-brand-dark">What to Expect</h2>
+                <div class="space-y-4">
+                  <div class="flex items-start space-x-4">
+                    <div class="w-8 h-8 bg-brand-orange/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <i data-lucide="clock" class="w-4 h-4 text-brand-orange"></i>
+                    </div>
+                    <div>
+                      <h3 class="font-semibold text-brand-dark">15 Minutes, Maximum Impact</h3>
+                      <p class="text-slate-600">We'll dive deep into your goals, interests, and what you're seeking from your next adventure.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start space-x-4">
+                    <div class="w-8 h-8 bg-brand-teal/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <i data-lucide="heart" class="w-4 h-4 text-brand-teal"></i>
+                    </div>
+                    <div>
+                      <h3 class="font-semibold text-brand-dark">No Pressure, Just Clarity</h3>
+                      <p class="text-slate-600">This is about understanding if we're a good fit and how we can help you create your ideal journey.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start space-x-4">
+                    <div class="w-8 h-8 bg-brand-green/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <i data-lucide="map" class="w-4 h-4 text-brand-green"></i>
+                    </div>
+                    <div>
+                      <h3 class="font-semibold text-brand-dark">Personalized Insights</h3>
+                      <p class="text-slate-600">You'll leave with initial ideas and a clear understanding of how we can craft your perfect adventure.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-8 space-y-6">
+                <h3 class="text-2xl font-display font-bold text-brand-dark">Other Ways to Connect</h3>
+                <div class="space-y-4">
+                  <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-brand-orange/20 rounded-full flex items-center justify-center">
+                      <i data-lucide="mail" class="w-6 h-6 text-brand-orange"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-brand-dark">Email</h4>
+                      <p class="text-slate-600">hello@readysetjourney.com</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-brand-teal/20 rounded-full flex items-center justify-center">
+                      <i data-lucide="phone" class="w-6 h-6 text-brand-teal"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-brand-dark">Phone</h4>
+                      <p class="text-slate-600">+1 (555) 123-4567</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-xl p-8 border border-slate-100">
+              <form class="space-y-6">
+                <div class="text-center space-y-4 mb-8">
+                  <h3 class="text-2xl font-display font-bold text-brand-dark">Book Your Free Call</h3>
+                  <p class="text-slate-600">Fill out the form below and we'll be in touch within 24 hours to schedule your discovery call.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <label for="firstName" class="block text-sm font-medium text-slate-700 mb-2">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required 
+                           class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-colors">
+                  </div>
+                  <div>
+                    <label for="lastName" class="block text-sm font-medium text-slate-700 mb-2">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required 
+                           class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-colors">
+                  </div>
+                </div>
+
+                <div>
+                  <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Email Address</label>
+                  <input type="email" id="email" name="email" required 
+                         class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-colors">
+                </div>
+
+                <div>
+                  <label for="phone" class="block text-sm font-medium text-slate-700 mb-2">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" 
+                         class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-colors">
+                </div>
+
+                <div>
+                  <label for="stage" class="block text-sm font-medium text-slate-700 mb-2">What best describes your current situation?</label>
+                  <select id="stage" name="stage" required 
+                          class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-colors">
+                    <option value="">Select your situation</option>
+                    <option value="recent-graduate">Recent Graduate</option>
+                    <option value="burned-out-professional">Burned-Out Professional</option>
+                    <option value="midlife-navigator">Midlife Navigator</option>
+                    <option value="discerning-retiree">Discerning Retiree</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="timeline" class="block text-sm font-medium text-slate-700 mb-2">When are you looking to travel?</label>
+                  <select id="timeline" name="timeline" required 
+                          class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-colors">
+                    <option value="">Select timeline</option>
+                    <option value="1-3-months">1-3 months</option>
+                    <option value="3-6-months">3-6 months</option>
+                    <option value="6-12-months">6-12 months</option>
+                    <option value="12-plus-months">12+ months</option>
+                    <option value="flexible">Flexible</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="message" class="block text-sm font-medium text-slate-700 mb-2">Tell us about your goals and what you're seeking</label>
+                  <textarea id="message" name="message" rows="4" 
+                            class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-colors"
+                            placeholder="What are you hoping to discover or achieve through your journey?"></textarea>
+                </div>
+
+                <button type="submit" 
+                        class="w-full bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold py-4 px-6 rounded-full text-lg transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl">
+                  <i data-lucide="calendar" class="w-5 h-5 mr-2 inline"></i>
+                  Book My Free Discovery Call
+                </button>
+
+                <p class="text-sm text-slate-500 text-center">
+                  We respect your privacy. Your information will never be shared with third parties.
+                </p>
+              </form>
+            </div>
           </div>
         </div>
       </div>
