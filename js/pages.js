@@ -463,4 +463,133 @@ const pages = {
                   Why Gap Years Are Making a Comeback (And Why That's Good News)
                 </h2>
                 <p class="text-slate-600">
-                  More young people are saying no to the traditional college rush and yes
+                  More young people are saying no to the traditional college rush and yes to intentional exploration. Here's why this trend is creating better humans.
+                </p>
+                <a href="#" class="text-brand-orange font-semibold hover:text-brand-orange/80 transition-colors">
+                  Read More →
+                </a>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&h=250&fit=crop&crop=center" 
+                   alt="Solo traveler" 
+                   class="w-full h-48 object-cover">
+              <div class="p-6 space-y-4">
+                <div class="flex items-center space-x-2 text-sm text-slate-500">
+                  <span>January 15, 2025</span>
+                  <span>•</span>
+                  <span>7 min read</span>
+                </div>
+                <h2 class="text-xl font-display font-bold text-brand-dark hover:text-brand-orange transition-colors">
+                  The Death of Generic Travel (And What's Rising From Its Ashes)
+                </h2>
+                <p class="text-slate-600">
+                  Instagram-worthy destinations and cookie-cutter itineraries are losing their appeal. Here's what conscious travelers are choosing instead.
+                </p>
+                <a href="#" class="text-brand-orange font-semibold hover:text-brand-orange/80 transition-colors">
+                  Read More →
+                </a>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop&crop=center" 
+                   alt="Mountain landscape" 
+                   class="w-full h-48 object-cover">
+              <div class="p-6 space-y-4">
+                <div class="flex items-center space-x-2 text-sm text-slate-500">
+                  <span>January 10, 2025</span>
+                  <span>•</span>
+                  <span>6 min read</span>
+                </div>
+                <h2 class="text-xl font-display font-bold text-brand-dark hover:text-brand-orange transition-colors">
+                  How to Know When You're Ready for a Life-Changing Journey
+                </h2>
+                <p class="text-slate-600">
+                  Not every trip needs to be transformative. But when you're at a crossroads, here are the signs it's time for something bigger.
+                </p>
+                <a href="#" class="text-brand-orange font-semibold hover:text-brand-orange/80 transition-colors">
+                  Read More →
+                </a>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=400&h=250&fit=crop&crop=center" 
+                   alt="City exploration" 
+                   class="w-full h-48 object-cover">
+              <div class="p-6 space-y-4">
+                <div class="flex items-center space-x-2 text-sm text-slate-500">
+                  <span>January 5, 2025</span>
+                  <span>•</span>
+                  <span>8 min read</span>
+                </div>
+                <h2 class="text-xl font-display font-bold text-brand-dark hover:text-brand-orange transition-colors">
+                  The Burnout Epidemic: Why Taking a Break Isn't Selfish
+                </h2>
+                <p class="text-slate-600">
+                  Society tells us to push through, but sometimes the most productive thing you can do is step away. Here's how to do it right.
+                </p>
+                <a href="#" class="text-brand-orange font-semibold hover:text-brand-orange/80 transition-colors">
+                  Read More →
+                </a>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400&h=250&fit=crop&crop=center" 
+                   alt="Sunset journey" 
+                   class="w-full h-48 object-cover">
+              <div class="p-6 space-y-4">
+                <div class="flex items-center space-x-2 text-sm text-slate-500">
+                  <span>December 28, 2024</span>
+                  <span>•</span>
+                  <span>5 min read</span>
+                </div>
+                <h2 class="text-xl font-display font-bold text-brand-dark hover:text-brand-orange transition-colors">
+                  What Nobody Tells You About Finding Your Purpose
+                </h2>
+                <p class="text-slate-600">
+                  Spoiler alert: It's not a lightning bolt moment. Here's what the journey of self-discovery actually looks like.
+                </p>
+                <a href="#" class="text-brand-orange font-semibold hover:text-brand-orange/80 transition-colors">
+                  Read More →
+                </a>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&h=250&fit=crop&crop=center" 
+                   alt="Ocean view" 
+                   class="w-full h-48 object-cover">
+              <div class="p-6 space-y-4">
+                <div class="flex items-center space-x-2 text-sm text-slate-500">
+                  <span>December 20, 2024</span>
+                  <span>•</span>
+                  <span>9 min read</span>
+                </div>
+                <h2 class="text-xl font-display font-bold text-brand-dark hover:text-brand-orange transition-colors">
+                  The Art of Slow Travel: Why Rushing Ruins Everything
+                </h2>
+                <p class="text-slate-600">
+                  In our Instagram-driven world, we've forgotten how to truly experience a place. Here's how to travel like you mean it.
+                </p>
+                <a href="#" class="text-brand-orange font-semibold hover:text-brand-orange/80 transition-colors">
+                  Read More →
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div class="text-center mt-16">
+            <a href="#" class="inline-flex items-center bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105">
+              Load More Articles
+              <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  `
+};
