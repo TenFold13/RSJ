@@ -493,7 +493,7 @@ Thanks!`;
 I'm interested in joining the Alumni Salon community. Please send me more information about membership and upcoming events.
 
 Looking forward to connecting with fellow journey alumni!`;
-    const mailtoLink = \`mailto:hello@readysetjourney.com?subject=Alumni Salon Interest&body=${encodeURIComponent(emailBody)}`;
+    const mailtoLink = `mailto:hello@readysetjourney.com?subject=Alumni Salon Interest&body=${encodeURIComponent(emailBody)}`;
     window.location.href = mailtoLink;
   };
 });
