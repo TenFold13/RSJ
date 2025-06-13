@@ -3,7 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ready Set Journey - Launch Your Next Chapter</title>
+    <title>Transformational Travel Blueprints | Ready Set Journey - Launch Your Next Chapter</title>
+    <meta name="description" content="Personalized travel blueprints that combine meaningful experiences with career clarity. Join 137 professionals who've transformed their careers through strategic travel.">
+    <meta name="keywords" content="transformational travel, career change, sabbatical planning, professional development, travel blueprints">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://readysetjourney.com/">
+    <meta property="og:title" content="Ready Set Journey - Transformational Travel Blueprints">
+    <meta property="og:description" content="Personalized travel blueprints that combine meaningful experiences with career clarity.">
+    <meta property="og:image" content="https://readysetjourney.com/images/RSJ%20Logo.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://readysetjourney.com/">
+    <meta property="twitter:title" content="Ready Set Journey - Transformational Travel Blueprints">
+    <meta property="twitter:description" content="Personalized travel blueprints that combine meaningful experiences with career clarity.">
+    <meta property="twitter:image" content="https://readysetjourney.com/images/RSJ%20Logo.jpg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Ready Set Journey",
+      "url": "https://readysetjourney.com",
+      "logo": "https://readysetjourney.com/images/RSJ%20Logo.jpg",
+      "description": "Transformational travel experiences designed for career growth and personal development",
+      "sameAs": [
+        "https://www.linkedin.com/company/readysetjourney/",
+        "https://instagram.com/readysetjourney",
+        "https://tiktok.com/@readysetjourney",
+        "https://facebook.com/readysetjourney"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "hello@readysetjourney.com"
+      }
+    }
+    </script>
+    
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <base href="/">
     <link rel="stylesheet" href="/style.css">
@@ -186,6 +226,11 @@
           <a href="/contact" class="nav-link inline-flex bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold py-2 px-4 rounded-lg text-sm transition-all duration-300 ease-in-out transform hover:scale-105">
             Free Discovery Call
           </a>
+          <div class="mt-6">
+            <button onclick="joinAlumniSalon()" class="text-sm text-slate-300 hover:text-white underline">
+              Join Alumni Salon →
+            </button>
+          </div>
           <div class="mt-4 space-y-2 text-xs text-slate-400">
             <div class="flex items-center">
               <i data-lucide="shield-check" class="w-4 h-4 mr-2"></i>
@@ -205,9 +250,9 @@
       <div class="border-t border-slate-800 pt-8 text-center text-sm">
         <p>&copy; <span id="currentYear"></span> Ready Set Journey. Your adventure starts here.</p>
         <div class="mt-4 flex justify-center space-x-6 text-xs">
-          <a href="#" class="hover:text-brand-orange transition-colors duration-300">Privacy Policy</a>
-          <a href="#" class="hover:text-brand-orange transition-colors duration-300">Terms of Service</a>
-          <a href="#" class="hover:text-brand-orange transition-colors duration-300">Refund Policy</a>
+          <a href="/privacy" class="hover:text-brand-orange transition-colors duration-300">Privacy Policy</a>
+          <a href="/terms" class="hover:text-brand-orange transition-colors duration-300">Terms of Service</a>
+          <a href="/refund" class="hover:text-brand-orange transition-colors duration-300">Refund Policy</a>
         </div>
       </div>
     </div>
@@ -220,6 +265,7 @@
 
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="/js/seo.js"></script>
   <script src="/js/router.js"></script>
   <script src="/js/pages.js"></script>
   <script src="/js/main.js"></script>

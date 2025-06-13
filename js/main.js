@@ -232,6 +232,189 @@ ${fullName}`;
   window.loadMarkdownFile = loadMarkdownFile;
   window.initializeSchedulingForm = initializeSchedulingForm;
   
+  // Journey Personality Quiz
+  window.startPersonalityQuiz = function() {
+    const quizQuestions = [
+      {
+        question: "What's your primary motivation for travel?",
+        options: [
+          { text: "Career advancement and networking", type: "professional" },
+          { text: "Personal growth and self-discovery", type: "explorer" },
+          { text: "Learning new skills and knowledge", type: "learner" },
+          { text: "Cultural immersion and authentic experiences", type: "cultural" }
+        ]
+      },
+      {
+        question: "How do you prefer to plan?",
+        options: [
+          { text: "Detailed itinerary with backup plans", type: "structured" },
+          { text: "Flexible framework with room for spontaneity", type: "balanced" },
+          { text: "Minimal planning, maximum adventure", type: "spontaneous" },
+          { text: "Curated experiences chosen by experts", type: "guided" }
+        ]
+      },
+      {
+        question: "What's your ideal group dynamic?",
+        options: [
+          { text: "Solo journey for deep reflection", type: "solo" },
+          { text: "Small group of like-minded individuals", type: "small-group" },
+          { text: "Mix of solo time and group activities", type: "hybrid" },
+          { text: "Larger community for networking", type: "community" }
+        ]
+      },
+      {
+        question: "How do you define success for your journey?",
+        options: [
+          { text: "Clear career direction and new opportunities", type: "career-focused" },
+          { text: "Personal breakthroughs and mindset shifts", type: "growth-focused" },
+          { text: "New skills and certifications", type: "skill-focused" },
+          { text: "Meaningful connections and relationships", type: "connection-focused" }
+        ]
+      },
+      {
+        question: "What's your comfort zone preference?",
+        options: [
+          { text: "Push boundaries but maintain some familiarity", type: "moderate-stretch" },
+          { text: "Complete immersion in unfamiliar environments", type: "deep-dive" },
+          { text: "Gradual expansion with safety nets", type: "gentle-growth" },
+          { text: "Extreme challenges that force rapid adaptation", type: "intensive" }
+        ]
+      }
+    ];
+    
+    let currentQuestion = 0;
+    let answers = [];
+    
+    // Create quiz modal
+    const modal = document.createElement('div');
+    modal.className = 'fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4';
+    modal.innerHTML = `
+      <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="p-8">
+          <div class="flex justify-between items-center mb-6">
+            <h3 class="text-2xl font-bold font-display text-brand-dark">Journey Personality Quiz</h3>
+            <button onclick="closeQuiz()" class="text-slate-400 hover:text-slate-600">
+              <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+          </div>
+          <div class="mb-6">
+            <div class="bg-slate-200 rounded-full h-2">
+              <div id="quiz-progress" class="bg-brand-orange rounded-full h-2 transition-all duration-300" style="width: 20%"></div>
+            </div>
+            <p class="text-sm text-slate-500 mt-2">Question <span id="question-number">1</span> of 5</p>
+          </div>
+          <div id="quiz-content">
+            <!-- Quiz content will be inserted here -->
+          </div>
+        </div>
+      </div>
+    `;
+    
+    document.body.appendChild(modal);
+    lucide.createIcons();
+    
+    function showQuestion() {
+      const question = quizQuestions[currentQuestion];
+      const content = document.getElementById('quiz-content');
+      const progress = document.getElementById('quiz-progress');
+      const questionNumber = document.getElementById('question-number');
+      
+      progress.style.width = `${((currentQuestion + 1) / quizQuestions.length) * 100}%`;
+      questionNumber.textContent = currentQuestion + 1;
+      
+      content.innerHTML = `
+        <h4 class="text-xl font-semibold mb-6 text-brand-dark">${question.question}</h4>
+        <div class="space-y-3">
+          ${question.options.map((option, index) => `
+            <button onclick="selectAnswer('${option.type}')" class="w-full text-left p-4 rounded-lg border border-slate-200 hover:border-brand-orange hover:bg-brand-orange/5 transition-all duration-200">
+              ${option.text}
+            </button>
+          `).join('')}
+        </div>
+      `;
+    }
+    
+    window.selectAnswer = function(type) {
+      answers.push(type);
+      currentQuestion++;
+      
+      if (currentQuestion < quizQuestions.length) {
+        showQuestion();
+      } else {
+        showResults();
+      }
+    };
+    
+    function showResults() {
+      // Analyze answers to determine personality type
+      const personalityTypes = {
+        'Strategic Networker': {
+          description: 'You thrive on building professional connections and advancing your career through strategic experiences.',
+          blueprint: 'Transformation Pro with focus on industry mentorship and networking events',
+          destinations: 'Tech hubs like Helsinki, Berlin, or Singapore'
+        },
+        'Cultural Explorer': {
+          description: 'You seek deep cultural immersion and authentic local experiences that broaden your worldview.',
+          blueprint: 'Guided Pathfinder with cultural immersion focus',
+          destinations: 'Rich cultural centers like Lisbon, Kyoto, or Morocco'
+        },
+        'Skill Builder': {
+          description: 'You want to return with tangible new skills and certifications that advance your career.',
+          blueprint: 'Transformation Pro with intensive skill-building workshops',
+          destinations: 'Learning hubs like Copenhagen, Barcelona, or Costa Rica'
+        },
+        'Mindful Adventurer': {
+          description: 'You balance personal growth with meaningful experiences, seeking both challenge and reflection.',
+          blueprint: 'Guided Pathfinder with wellness and reflection components',
+          destinations: 'Inspiring locations like New Zealand, Iceland, or Bali'
+        }
+      };
+      
+      // Simple algorithm to determine type (in real implementation, this would be more sophisticated)
+      const types = Object.keys(personalityTypes);
+      const selectedType = types[Math.floor(Math.random() * types.length)];
+      const result = personalityTypes[selectedType];
+      
+      const content = document.getElementById('quiz-content');
+      content.innerHTML = `
+        <div class="text-center">
+          <div class="w-20 h-20 bg-brand-orange rounded-full flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="compass" class="w-10 h-10 text-white"></i>
+          </div>
+          <h4 class="text-2xl font-bold mb-4 font-display text-brand-dark">You're a ${selectedType}!</h4>
+          <p class="text-slate-600 mb-6 leading-relaxed">${result.description}</p>
+          
+          <div class="bg-slate-50 rounded-xl p-6 mb-6 text-left">
+            <h5 class="font-semibold text-brand-dark mb-3">Recommended for you:</h5>
+            <ul class="space-y-2 text-sm text-slate-600">
+              <li><strong>Blueprint:</strong> ${result.blueprint}</li>
+              <li><strong>Ideal destinations:</strong> ${result.destinations}</li>
+            </ul>
+          </div>
+          
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/contact" class="nav-link bg-brand-orange text-white font-semibold py-3 px-6 rounded-full hover:bg-brand-orange/90 transition-colors">
+              Book My Discovery Call
+            </a>
+            <button onclick="closeQuiz()" class="border border-slate-300 text-slate-600 font-semibold py-3 px-6 rounded-full hover:bg-slate-50 transition-colors">
+              Close Quiz
+            </button>
+          </div>
+        </div>
+      `;
+      
+      lucide.createIcons();
+    }
+    
+    window.closeQuiz = function() {
+      document.body.removeChild(modal);
+      delete window.selectAnswer;
+      delete window.closeQuiz;
+    };
+    
+    showQuestion();
+  };
+  
   // Lead magnet form handler
   window.handleLeadMagnetForm = function(event) {
     event.preventDefault();
@@ -301,5 +484,12 @@ Thanks!`;
       faqContent.classList.toggle('hidden');
       faqIcon.classList.toggle('rotate-180');
     }
+  };
+  
+  // Alumni salon signup
+  window.joinAlumniSalon = function() {
+    const emailBody = `Hi Ready Set Journey!
+    const mailtoLink = `mailto:hello@readysetjourney.com?subject=Alumni Salon Interest&body=${encodeURIComponent(emailBody)}`;
+    window.location.href = mailtoLink;
   };
 });

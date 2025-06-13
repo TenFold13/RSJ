@@ -33,6 +33,12 @@ class Router {
   handleRoute(path) {
     this.currentRoute = path;
     
+    // Update SEO elements
+    if (window.seoManager) {
+      window.seoManager.generateBreadcrumbs(path);
+      window.seoManager.trackPageView(path, document.title);
+    }
+    
     // Update active nav links
     document.querySelectorAll('.nav-link').forEach(link => {
       link.classList.remove('text-brand-orange', 'font-semibold');
