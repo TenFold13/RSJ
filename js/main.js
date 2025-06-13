@@ -231,4 +231,28 @@ ${fullName}`;
   // Make functions available globally
   window.loadMarkdownFile = loadMarkdownFile;
   window.initializeSchedulingForm = initializeSchedulingForm;
+
+  // Pricing page functions
+  window.trackPricingTier = function(tier) {
+    // Track pricing tier selection event
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'pricing_tier_selected', {
+        'tier': tier,
+        'value': tier
+      });
+    }
+    
+    // For now, redirect to contact page
+    router.navigate('/contact');
+  };
+
+  window.toggleFAQ = function(faqId) {
+    const faqContent = document.getElementById(faqId);
+    const faqIcon = document.getElementById(faqId + '-icon');
+    
+    if (faqContent && faqIcon) {
+      faqContent.classList.toggle('hidden');
+      faqIcon.classList.toggle('rotate-180');
+    }
+  };
 });
