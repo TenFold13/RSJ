@@ -801,7 +801,8 @@ const pages = {
         </div>
       </div>
     </section>
-  `
+  `,
+
   about: () => `
     <!-- About Hero -->
     <section class="py-20 md:py-32 bg-gradient-to-br from-brand-light via-white to-teal-50">
@@ -906,8 +907,42 @@ const pages = {
       </div>
     </section>
 
-    <!-- Company Manifesto -->
+    <!-- Company Values -->
     <section class="py-20 bg-white">
       <div class="container mx-auto px-6">
         <div class="max-w-4xl mx-auto text-center">
-}
+          <h2 class="text-4xl md:text-5xl font-bold mb-8 font-display text-brand-dark">Our Values</h2>
+          <div class="grid md:grid-cols-2 gap-8 text-left">
+            <div class="bg-slate-50 p-8 rounded-2xl">
+              <h3 class="text-xl font-semibold mb-4 text-brand-dark">Authentic Connection</h3>
+              <p class="text-slate-600">We believe in creating genuine relationships between travelers and local communities, fostering mutual understanding and respect.</p>
+            </div>
+            <div class="bg-slate-50 p-8 rounded-2xl">
+              <h3 class="text-xl font-semibold mb-4 text-brand-dark">Purposeful Growth</h3>
+              <p class="text-slate-600">Every experience is designed with intention, helping you develop skills and perspectives that serve your future goals.</p>
+            </div>
+            <div class="bg-slate-50 p-8 rounded-2xl">
+              <h3 class="text-xl font-semibold mb-4 text-brand-dark">Sustainable Impact</h3>
+              <p class="text-slate-600">We prioritize responsible travel that benefits local communities and preserves the destinations we visit.</p>
+            </div>
+            <div class="bg-slate-50 p-8 rounded-2xl">
+              <h3 class="text-xl font-semibold mb-4 text-brand-dark">Personalized Excellence</h3>
+              <p class="text-slate-600">No two journeys are alike. We craft each experience to match your unique goals, interests, and aspirations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-brand-orange to-brand-teal text-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 font-display">Ready to Start Your Journey?</h2>
+        <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">Let's create a transformative experience that aligns with your goals and dreams.</p>
+        <a href="/contact" class="nav-link inline-flex bg-white text-brand-orange font-bold py-4 px-8 rounded-full text-lg hover:bg-gray-100 transition-all duration-300 ease-in-out transform hover:scale-105 shadow-xl">
+          Book Your Free Discovery Call
+        </a>
+      </div>
+    </section>
+  `
+};
