@@ -82,16 +82,25 @@
         <ul class="flex space-x-8">
           <li><a href="/" class="nav-link text-sm text-slate-600 hover:text-brand-orange transition-colors duration-300 font-medium py-2">Home</a></li>
           <li><a href="/about" class="nav-link text-sm text-slate-600 hover:text-brand-orange transition-colors duration-300 font-medium py-2">About</a></li>
-          <li><a href="/how-it-works" class="nav-link text-sm text-slate-600 hover:text-brand-orange transition-colors duration-300 font-medium py-2">How It Works</a></li>
-          <li><a href="/blog" class="nav-link text-sm text-slate-600 hover:text-brand-orange transition-colors duration-300 font-medium py-2">Blog</a></li>
+          <li class="relative group">
+            <button class="text-sm text-slate-600 hover:text-brand-orange transition-colors duration-300 font-medium py-2 flex items-center">
+              Stories <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+            </button>
+            <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-slate-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <a href="/how-it-works" class="nav-link block px-4 py-3 text-sm text-slate-600 hover:text-brand-orange hover:bg-slate-50 transition-colors duration-300">Sample Journeys</a>
+              <a href="/blog" class="nav-link block px-4 py-3 text-sm text-slate-600 hover:text-brand-orange hover:bg-slate-50 transition-colors duration-300">Success Stories</a>
+              <a href="#testimonials" class="block px-4 py-3 text-sm text-slate-600 hover:text-brand-orange hover:bg-slate-50 transition-colors duration-300" onclick="scrollToSection('testimonials')">Testimonials</a>
+            </div>
+          </li>
           <li><a href="/pricing" class="nav-link text-sm text-slate-600 hover:text-brand-orange transition-colors duration-300 font-medium py-2">Pricing</a></li>
           <li><a href="/contact" class="nav-link text-sm text-slate-600 hover:text-brand-orange transition-colors duration-300 font-medium py-2">Contact</a></li>
         </ul>
       </nav>
       <div class="flex items-center space-x-4">
         <a href="/contact" class="nav-link hidden md:inline-flex bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold py-3 px-6 rounded-full text-sm transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl">
-          Book Your 15-Min Call
+          Free Discovery Call
         </a>
+        <p class="hidden lg:block text-xs text-slate-500">No obligation</p>
         <button id="mobile-menu-toggle" class="lg:hidden text-slate-600 hover:text-brand-orange transition-colors duration-300">
           <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
@@ -109,7 +118,7 @@
           <li><a href="/contact" class="nav-link block text-slate-600 hover:text-brand-orange transition-colors duration-300 font-medium py-2">Contact</a></li>
           <li class="pt-2">
             <a href="/contact" class="nav-link inline-flex bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold py-3 px-6 rounded-full text-sm transition-all duration-300 ease-in-out">
-              Book Your 15-Min Call
+              Free Discovery Call
             </a>
           </li>
         </ul>
@@ -175,12 +184,31 @@
           <h5 class="text-white font-semibold mb-6 font-display">Ready to Start?</h5>
           <p class="text-sm mb-4">Get your custom journey blueprint in just 15 minutes.</p>
           <a href="/contact" class="nav-link inline-flex bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold py-2 px-4 rounded-lg text-sm transition-all duration-300 ease-in-out transform hover:scale-105">
-            Book Your Call
+            Free Discovery Call
           </a>
+          <div class="mt-4 space-y-2 text-xs text-slate-400">
+            <div class="flex items-center">
+              <i data-lucide="shield-check" class="w-4 h-4 mr-2"></i>
+              <span>ATTA Certified</span>
+            </div>
+            <div class="flex items-center">
+              <i data-lucide="credit-card" class="w-4 h-4 mr-2"></i>
+              <span>Secure Payment</span>
+            </div>
+            <div class="flex items-center">
+              <i data-lucide="refresh-cw" class="w-4 h-4 mr-2"></i>
+              <span>14-Day Guarantee</span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="border-t border-slate-800 pt-8 text-center text-sm">
         <p>&copy; <span id="currentYear"></span> Ready Set Journey. Your adventure starts here.</p>
+        <div class="mt-4 flex justify-center space-x-6 text-xs">
+          <a href="#" class="hover:text-brand-orange transition-colors duration-300">Privacy Policy</a>
+          <a href="#" class="hover:text-brand-orange transition-colors duration-300">Terms of Service</a>
+          <a href="#" class="hover:text-brand-orange transition-colors duration-300">Refund Policy</a>
+        </div>
       </div>
     </div>
   </footer>

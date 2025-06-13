@@ -231,6 +231,53 @@ ${fullName}`;
   // Make functions available globally
   window.loadMarkdownFile = loadMarkdownFile;
   window.initializeSchedulingForm = initializeSchedulingForm;
+  
+  // Lead magnet form handler
+  window.handleLeadMagnetForm = function(event) {
+    event.preventDefault();
+    const email = document.getElementById('lead-email').value;
+    
+    // Create mailto link for lead magnet
+    const emailBody = `Hi Ready Set Journey!
+
+I'd like to receive the free 3-Day Career Clarity Challenge.
+
+Email: ${email}
+
+Please send me the challenge materials and add me to your newsletter for career transformation tips.
+
+Thanks!`;
+
+    const mailtoLink = `mailto:hello@readysetjourney.com?subject=Free 3-Day Career Clarity Challenge Request&body=${encodeURIComponent(emailBody)}`;
+    window.location.href = mailtoLink;
+    
+    // Show success message
+    const form = document.getElementById('lead-magnet-form');
+    const button = form.querySelector('button[type="submit"]');
+    const originalText = button.innerHTML;
+    
+    button.innerHTML = '<i data-lucide="check" class="w-5 h-5 mr-2"></i>Email Opened!';
+    button.disabled = true;
+    button.classList.add('opacity-75');
+    
+    lucide.createIcons();
+    
+    // Reset after 3 seconds
+    setTimeout(() => {
+      button.innerHTML = originalText;
+      button.disabled = false;
+      button.classList.remove('opacity-75');
+      form.reset();
+    }, 3000);
+  };
+  
+  // Scroll to section function
+  window.scrollToSection = function(sectionId) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   // Pricing page functions
   window.trackPricingTier = function(tier) {
