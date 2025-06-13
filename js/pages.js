@@ -411,39 +411,3 @@ const pages = {
     <section class="py-20 bg-white">
       <div class="container mx-auto px-6">
         <div class="max-w-4xl mx-auto text-center">
-          <h2 class="text-4xl md:text-5xl font-bold mb-8 font-display text-brand-dark">
-            Our Manifesto
-          </h2>
-          <div class="prose prose-lg mx-auto text-slate-600">
-            <p class="text-xl leading-relaxed mb-6">
-              We believe that the most profound transformations happen when we step outside our comfort zones 
-              and immerse ourselves in new environments, cultures, and ways of thinking.
-            </p>
-            <p class="text-lg leading-relaxed mb-6">
-              Travel isn't just about seeing new places—it's about becoming a new version of yourself. 
-              It's about challenging assumptions, building resilience, and discovering capabilities you never knew you had.
-            </p>
-            <p class="text-lg leading-relaxed">
-              Every journey we design is an investment in your future self. We're not just travel planners; 
-              we're architects of transformation, curators of growth, and facilitators of meaningful connections 
-              that last long after you return home.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="py-20 bg-gradient-to-r from-brand-orange to-brand-teal text-white">
-      <div class="container mx-auto px-6 text-center">
-        <h2 class="text-4xl md:text-5xl font-bold mb-6 font-display">Ready to Begin Your Transformation?</h2>
-        <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-          Let's design a journey that doesn't just take you places—it takes you forward.
-        </p>
-        <a href="/contact" class="nav-link inline-flex bg-white text-brand-orange font-bold py-4 px-8 rounded-full text-lg hover:bg-gray-100 transition-all duration-300 ease-in-out transform hover:scale-105 shadow-xl">
-          Start Your Journey
-        </a>
-      </div>
-    </section>
-  `
-};

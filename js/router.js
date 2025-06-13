@@ -42,10 +42,10 @@ class Router {
     // Update active nav links
     document.querySelectorAll('.nav-link').forEach(link => {
       link.classList.remove('text-brand-orange', 'font-semibold');
-      link.classList.add('text-brand-dark-neutral');
+      link.classList.add('text-slate-600');
       
       if (link.getAttribute('href') === path) {
-        link.classList.remove('text-brand-dark-neutral');
+        link.classList.remove('text-slate-600');
         link.classList.add('text-brand-orange', 'font-semibold');
       }
     });

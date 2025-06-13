@@ -7,6 +7,9 @@
     <meta name="description" content="Personalized travel blueprints that combine meaningful experiences with career clarity. Join 137 professionals who've transformed their careers through strategic travel.">
     <meta name="keywords" content="transformational travel, career change, sabbatical planning, professional development, travel blueprints">
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/RSJ Logo.jpg">
+    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://readysetjourney.com/">
@@ -129,7 +132,7 @@
             <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-slate-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
               <a href="/how-it-works" class="nav-link block px-4 py-3 text-sm text-slate-600 hover:text-brand-orange hover:bg-slate-50 transition-colors duration-300">Sample Journeys</a>
               <a href="/blog" class="nav-link block px-4 py-3 text-sm text-slate-600 hover:text-brand-orange hover:bg-slate-50 transition-colors duration-300">Success Stories</a>
-              <a href="#testimonials" class="block px-4 py-3 text-sm text-slate-600 hover:text-brand-orange hover:bg-slate-50 transition-colors duration-300" onclick="scrollToSection('testimonials')">Testimonials</a>
+              <button onclick="scrollToSection('testimonials')" class="w-full text-left block px-4 py-3 text-sm text-slate-600 hover:text-brand-orange hover:bg-slate-50 transition-colors duration-300">Testimonials</button>
             </div>
           </li>
           <li><a href="/pricing" class="nav-link text-sm text-slate-600 hover:text-brand-orange transition-colors duration-300 font-medium py-2">Pricing</a></li>
@@ -140,7 +143,7 @@
         <a href="/contact" class="nav-link hidden md:inline-flex bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold py-3 px-6 rounded-full text-sm transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl">
           Free Discovery Call
         </a>
-        <p class="hidden lg:block text-xs text-slate-500">No obligation</p>
+        <span class="hidden lg:block text-xs text-slate-500">No obligation</span>
         <button id="mobile-menu-toggle" class="lg:hidden text-slate-600 hover:text-brand-orange transition-colors duration-300">
           <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
@@ -250,9 +253,9 @@
       <div class="border-t border-slate-800 pt-8 text-center text-sm">
         <p>&copy; <span id="currentYear"></span> Ready Set Journey. Your adventure starts here.</p>
         <div class="mt-4 flex justify-center space-x-6 text-xs">
-          <a href="/privacy" class="hover:text-brand-orange transition-colors duration-300">Privacy Policy</a>
-          <a href="/terms" class="hover:text-brand-orange transition-colors duration-300">Terms of Service</a>
-          <a href="/refund" class="hover:text-brand-orange transition-colors duration-300">Refund Policy</a>
+          <button onclick="alert('Privacy Policy - Coming Soon')" class="hover:text-brand-orange transition-colors duration-300">Privacy Policy</button>
+          <button onclick="alert('Terms of Service - Coming Soon')" class="hover:text-brand-orange transition-colors duration-300">Terms of Service</button>
+          <button onclick="alert('Refund Policy - 14-day money-back guarantee on all blueprints')" class="hover:text-brand-orange transition-colors duration-300">Refund Policy</button>
         </div>
       </div>
     </div>

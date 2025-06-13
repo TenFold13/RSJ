@@ -454,6 +454,13 @@ Thanks!`;
     }, 3000);
   };
   
+  // Add event listener for lead magnet form
+  document.addEventListener('submit', (e) => {
+    if (e.target.id === 'lead-magnet-form') {
+      handleLeadMagnetForm(e);
+    }
+  });
+  
   // Scroll to section function
   window.scrollToSection = function(sectionId) {
     const element = document.getElementById(sectionId);
